@@ -25,10 +25,27 @@ Route::get('/donations', function () {
     }
 });
 
+Route::get('/transactions', function () {
+    if (Auth::guest()) {
+      return redirect('login');
+
+    }
+    else {
+
+      $transactions = App\Transaction::paginate(10);
+
+      return view('transactions',compact('transactions'));
+    }
+});
+
+
 Route::group(['middleware' => 'auth'], function () {
 
     Route::get('/home', function () {
-      return view('donations');
+      if(auth()->user()->rol_id == 1)
+        return view('transactions');
+      if(auth()->user()->rol_id == 2)
+        return view('donations');
     });
     //    Route::get('/link1', function ()    {
 //        // Uses Auth Middleware

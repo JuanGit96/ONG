@@ -17,16 +17,18 @@ class DatabaseSeeder extends Seeder
         $this->truncateTables([
             'tipo_documento',
             'tipo_persona',
+            'tipo_transaccion',
+            'transaccion',
             'rol',
             'users',
         ]);
 
          $this->call(RolTableSeeder::class);
          $this->call(PersonTypeTableSeeder::class);
+         $this->call(TypeTransactionSeeder::class);
          $this->call(DocuemtTypeTableSeeder::class);
          $this->call(UsersTableSeeder::class);
-
-
+         $this->call(TransactionSeeder::class);
     }
 
     public function truncateTables($tables)
