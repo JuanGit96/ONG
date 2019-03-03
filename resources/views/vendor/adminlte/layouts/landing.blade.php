@@ -30,6 +30,8 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
 
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
 
 </head>
 
@@ -84,17 +86,174 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
         </div>
     </div>
 
+    <div class="all-home">
+
+<div class="container-portada">
+        <div class="degradado"></div>
+        <div class="texto-portada">
+          <img src="{{ asset('/img/prueba.png') }}" alt="">
+          <h1>Findesin</h1>
+        </div>
+        <div class="flecha-down">
+          <i class="material-icons">
+          expand_more
+          </i>
+        </div>
+    </div>
+
+
+  			<div class="info-quienes-somos" id="qs">
+          <div class="findesin-info">
+            <div class="title">Findesin</div>
+            <p class="parrafo-title">
+              10 años trabajando en pro de la reconstrucción deltejido social en la población más vulnerablede nuestra ciudad (NIÑOS, ADOLECENTES Y JOVENES)
+            </p>
+          </div>
+          <div class="container-nosotros">
+            <div class="quienes-somos-info">
+              <div class="titulos-cuadros">
+                Quienes somos
+              </div>
+              <div class="parrafos-cuadros">
+                Somos una institución creada con el fin de brindar apoyo psicosocial, emocional y espiritual a niños, niñas, adolescentes y jóvenes cuyos derechos han sido vulnerados y no tienen la posibilidad de construir un proyecto de vida que les permita ser competitivos socialmente y a todo nivel.
+              </div>
+            </div>
+            <div class="que-hacemos-info">
+              <div class="titulos-cuadros">
+                Lo que hacemos
+              </div>
+              <div class="parrafos-cuadros">
+                Deseñamos implementamos y administramos programas de prevención que nos ayudan a enfrentar las principales problematicas que afectan a la población que queremos alcanzar. Además trabajamos en la promoción de valoresy la restitición de derechos.
+              </div>
+            </div>
+            </div>
+          </div>
+
+          <div class="metas">
+            <div class="findesin-info">
+              <div class="title">Objetivos</div>
+            </div>
+            <div class="metas-imagen">
+              <div class="meta-info">
+                <div class="titulos-cuadros">
+                  Metas
+                </div>
+                <div class="parrafos-cuadros">
+                  *Lograr el 100% de cobertura económica necesaria para la manutención de cada una de las niñas beneficiarias del programa. <br>
+                  *Finalización de la sede administrativa de la fundación<br>
+                  *Compra del terreno donde actualmente funcioa la casa hogar y construcción de la misma de acuerdo a lasnecesidades y requerimientos de la institución <br>
+                </div>
+              </div>
+              <div class="meta-imagen">
+
+              </div>
+            </div>
+            <div class="metas-logrando-imagen">
+              <div class="meta-logrando-info">
+
+              </div>
+              <div class="meta-logrando-imagen">
+                <div class="titulos-cuadros">
+                  Lo estamos logrando
+                </div>
+                <div class="parrafos-cuadros">
+                  *Lograr el 100% de cobertura económica necesaria para la manutención de cada una de las niñas beneficiarias del programa. <br>
+                  *Finalización de la sede administrativa de la fundación<br>
+                  *Compra del terreno donde actualmente funcioa la casa hogar y construcción de la misma de acuerdo a lasnecesidades y requerimientos de la institución <br>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="proyectos">
+            <div class="findesin-info">
+              <div class="title">Proyectos</div>
+            </div>
+
+            <div class="container-proyectos">
+              <div class="proyecto1-info">
+                <div class="titulos-cuadros">
+                  Generaciones en movimiento
+                </div>
+                <div class="parrafos-cuadros">
+                  Somos una institución creada con el fin de brindar apoyo psicosocial, emocional y espiritual a niños, niñas, adolescentes y jóvenes cuyos derechos han sido vulnerados y no tienen la posibilidad de construir un proyecto de vida que les permita ser competitivos socialmente y a todo nivel.
+                </div>
+              </div>
+              <div class="proyecto2-info">
+                <div class="titulos-cuadros">
+                  Hogares de proteccion al menor en riesgo
+                </div>
+                <div class="parrafos-cuadros">
+                  Deseñamos implementamos y administramos programas de prevención que nos ayudan a enfrentar las principales problematicas que afectan a la población que queremos alcanzar. Además trabajamos en la promoción de valoresy la restitición de derechos.
+                </div>
+              </div>
+              </div>
+
+              <div class="container-circulos">
+                <div class="cuadro-circulo">
+                  <div class="circulo">
+                    <div class="circulo-interno">
+                    </div>
+                  </div>
+                  <div class="circulo-info">
+                    BREAK DANCE
+                  </div>
+                </div>
+                <div class="cuadro-circulo">
+                  <div class="circulo">
+                    <div class="circulo-interno">
+                    </div>
+                  </div>
+                  <div class="circulo-info">
+                    TEATRO
+                  </div>
+                </div>
+                <div class="cuadro-circulo">
+                  <div class="circulo">
+                    <div class="circulo-interno">
+                    </div>
+                  </div>
+                  <div class="circulo-info">
+                    CIRCO
+                  </div>
+                </div>
+                <div class="cuadro-circulo">
+                  <div class="circulo">
+                    <div class="circulo-interno">
+                    </div>
+                  </div>
+                  <div class="circulo-info">
+                    COREOGRAFIAS
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="container-map">
+            <div class="findesin-info">
+              <div class="title">Donde encontrarnos</div>
+            </div>
+            <div class="mapa">
+              <div class="background-mapa">
+                <div class="boton-mapa">
+                  <a href="https://www.google.com/maps/place/Ac+53+%2374a-29,+Bogotá/@4.6757556,-74.1097037,16.79z/data=!4m5!3m4!1s0x8e3f9b704d72bce1:0x5e89be4797ad967c!8m2!3d4.6752624!4d-74.1092332" target="_blank">Ir a Google maps</a>
+                </div>
+              </div>
+            </div>
+          </div>
+				</div>
+
+<!--
 
     <section id="home" name="home"></section>
     <div id="headerwrap">
         <div class="container">
             <div class="row centered">
                 <div class="col-lg-12">
-                    <h1>Acacha <b><a href="https://github.com/acacha/adminlte-laravel">adminlte-laravel</a></b></h1>
+                  <!--  <h1>Acacha <b><a href="https://github.com/acacha/adminlte-laravel">adminlte-laravel</a></b></h1>
                     <h3>A <a href="https://laravel.com/">Laravel</a> {{ trans('adminlte_lang::message.laravelpackage') }}
                         scaffolding/boilerplate {{ trans('adminlte_lang::message.to') }} <a href="https://almsaeedstudio.com/preview">AdminLTE</a> {{ trans('adminlte_lang::message.templatewith') }}
                         <a href="http://getbootstrap.com/">Bootstrap</a> 3.0 {{ trans('adminlte_lang::message.and') }} <a href="http://blacktie.co/demo/pratt/">Pratt</a> Landing page</h3>
-                    <h3><a href="{{ url('/register') }}" class="btn btn-lg btn-success">{{ trans('adminlte_lang::message.gedstarted') }}</a></h3>
+                    <h3><a href="{{ url('/register') }}" class="btn btn-lg btn-success">{{ trans('adminlte_lang::message.gedstarted') }}</a></h3>--
+                      <h1>Findesin</h1>
                 </div>
                 <div class="col-lg-2">
                     <h5>{{ trans('adminlte_lang::message.amazing') }}</h5>
@@ -111,12 +270,12 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
                     <p>... {{ trans('adminlte_lang::message.by') }} <a href="http://acacha.org/sergitur">Sergi Tur Badenas</a> {{ trans('adminlte_lang::message.at') }} <a href="http://acacha.org">acacha.org</a> {{ trans('adminlte_lang::message.readytouse') }}</p>
                 </div>
             </div>
-        </div> <!--/ .container -->
-    </div><!--/ #headerwrap -->
+        </div> <!--/ .container --
+    </div><!--/ #headerwrap --
 
 
     <section id="desc" name="desc"></section>
-    <!-- INTRO WRAP -->
+    <!-- INTRO WRAP --
     <div id="intro">
         <div class="container">
             <div class="row centered">
@@ -141,10 +300,10 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
             </div>
             <br>
             <hr>
-        </div> <!--/ .container -->
-    </div><!--/ #introwrap -->
+        </div> <!--/ .container --
+    </div><!--/ #introwrap --
 
-    <!-- FEATURES WRAP -->
+    <!-- FEATURES WRAP --
     <div id="features">
         <div class="container">
             <div class="row">
@@ -158,20 +317,20 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
                 <div class="col-lg-6">
                     <h3>{{ trans('adminlte_lang::message.features') }}</h3>
                     <br>
-                    <!-- ACCORDION -->
+                    <!-- ACCORDION -
                     <div class="accordion ac" id="accordion2">
                         <div class="accordion-group">
                             <div class="accordion-heading">
                                 <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
                                     {{ trans('adminlte_lang::message.design') }}
                                 </a>
-                            </div><!-- /accordion-heading -->
+                            </div><!-- /accordion-heading --
                             <div id="collapseOne" class="accordion-body collapse in">
                                 <div class="accordion-inner">
                                     <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                                </div><!-- /accordion-inner -->
-                            </div><!-- /collapse -->
-                        </div><!-- /accordion-group -->
+                                </div><!-- /accordion-inner --
+                            </div><!-- /collapse --
+                        </div><!-- /accordion-group -
                         <br>
 
                         <div class="accordion-group">
@@ -183,9 +342,9 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
                             <div id="collapseTwo" class="accordion-body collapse">
                                 <div class="accordion-inner">
                                     <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                                </div><!-- /accordion-inner -->
-                            </div><!-- /collapse -->
-                        </div><!-- /accordion-group -->
+                                </div><!-- /accordion-inner --
+                            </div><!-- /collapse --
+                        </div><!-- /accordion-group --
                         <br>
 
                         <div class="accordion-group">
@@ -197,9 +356,9 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
                             <div id="collapseThree" class="accordion-body collapse">
                                 <div class="accordion-inner">
                                     <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                                </div><!-- /accordion-inner -->
-                            </div><!-- /collapse -->
-                        </div><!-- /accordion-group -->
+                                </div><!-- /accordion-inner --
+                            </div><!-- /collapse --
+                        </div><!-- /accordion-group --
                         <br>
 
                         <div class="accordion-group">
@@ -211,15 +370,15 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
                             <div id="collapseFour" class="accordion-body collapse">
                                 <div class="accordion-inner">
                                     <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                                </div><!-- /accordion-inner -->
-                            </div><!-- /collapse -->
-                        </div><!-- /accordion-group -->
+                                </div><!-- /accordion-inner --
+                            </div><!-- /collapse --
+                        </div><!-- /accordion-group --
                         <br>
-                    </div><!-- Accordion -->
+                    </div><!-- Accordion --
                 </div>
             </div>
-        </div><!--/ .container -->
-    </div><!--/ #features -->
+        </div><!--/ .container --
+    </div><!--/ #features --
 
 
     <section id="showcase" name="showcase"></section>
@@ -230,13 +389,13 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
                 <br>
                 <div class="col-lg-8 col-lg-offset-2">
                     <div id="carousel-example-generic" class="carousel slide">
-                        <!-- Indicators -->
+                        <!-- Indicators --
                         <ol class="carousel-indicators">
                             <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
                             <li data-target="#carousel-example-generic" data-slide-to="1"></li>
                         </ol>
 
-                        <!-- Wrapper for slides -->
+                        <!-- Wrapper for slides --
                         <div class="carousel-inner">
                             <div class="item active">
                                 <img src="{{ asset('/img/item-01.png') }}" alt="">
@@ -251,7 +410,7 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
             <br>
             <br>
             <br>
-        </div><!-- /container -->
+        </div><!-- /container --
     </div>
 
 
@@ -302,7 +461,7 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
             </p>
 
         </div>
-    </div>
+    </div>-->
 </div>
 
 <!-- Bootstrap core JavaScript
