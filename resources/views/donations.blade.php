@@ -57,6 +57,8 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
                     <li class="active"><a href="#tc" class="smoothScroll">Tarjeta de credito</a></li>
                     <li><a href="#ps" class="smoothScroll">Productos o servicios</a></li>
                     <li><a href="#contact" class="smoothScroll">{{ trans('adminlte_lang::message.contact') }}</a></li>
+                    <li><a href="{{url('transactions')}}" class="smoothScroll">Transacciones</a></li>
+
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     @if (Auth::guest())
