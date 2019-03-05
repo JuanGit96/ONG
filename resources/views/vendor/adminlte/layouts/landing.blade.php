@@ -55,11 +55,9 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
                     <li><a href="#desc" class="smoothScroll">{{ trans('adminlte_lang::message.description') }}</a></li>
                     <li><a href="#showcase" class="smoothScroll">{{ trans('adminlte_lang::message.showcase') }}</a></li>
                     <li><a href="#contact" class="smoothScroll">{{ trans('adminlte_lang::message.contact') }}</a></li>
-                    <li class="active"><a href="{{url('/donations')}}" class="smoothScroll">Donaciones</a></li>
                     @if (Auth::check())
-                      @if(auth()->user()->rol_id == 1)
-                      <li class="active"><a href="{{url('/transactions')}}" class="smoothScroll">Transacciones</a></li>
-                      @endif
+                        <li class=""><a href="{{url('/donations')}}" class="smoothScroll">Donaciones</a></li>
+                      <li class=""><a href="{{url('/transactions')}}" class="smoothScroll">Transacciones</a></li>
                     @endif
 
                 </ul>
