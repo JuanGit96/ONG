@@ -47,14 +47,14 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#"><b>adminlte-laravel</b></a>
+                <a class="navbar-brand" href="#"><b>Findesin</b></a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#home" class="smoothScroll">{{ trans('adminlte_lang::message.home') }}</a></li>
-                    <li><a href="#desc" class="smoothScroll">{{ trans('adminlte_lang::message.description') }}</a></li>
-                    <li><a href="#showcase" class="smoothScroll">{{ trans('adminlte_lang::message.showcase') }}</a></li>
-                    <li><a href="#contact" class="smoothScroll">{{ trans('adminlte_lang::message.contact') }}</a></li>
+                    <li class="active"><a href="#portada" class="smoothScroll">Home</a></li>
+                    <li><a href="#qs" class="smoothScroll">Sobre nosotros</a></li>
+                    <li><a href="#objetivos" class="smoothScroll">Objetivos</a></li>
+                    <li><a href="#proyectos" class="smoothScroll">Proyectos</a></li>
                     @if (Auth::check())
                         <li class=""><a href="{{url('/donations')}}" class="smoothScroll">Donaciones</a></li>
                       <li class=""><a href="{{url('/transactions')}}" class="smoothScroll">Transacciones</a></li>
@@ -91,7 +91,7 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
 
     <div class="all-home">
 
-<div class="container-portada">
+<div class="container-portada" id="portada">
         <div class="degradado"></div>
         <div class="texto-portada">
           <img src="{{ asset('/img/prueba.png') }}" alt="">
@@ -132,7 +132,7 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
             </div>
           </div>
 
-          <div class="metas">
+          <div class="metas" id="objetivos">
             <div class="findesin-info">
               <div class="title">Objetivos</div>
             </div>
@@ -172,7 +172,7 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
               <div class="title">Proyectos</div>
             </div>
 
-            <div class="container-proyectos">
+            <div class="container-proyectos" id="proyectos">
               <div class="proyecto1-info">
                 <div class="titulos-cuadros">
                   Generaciones en movimiento

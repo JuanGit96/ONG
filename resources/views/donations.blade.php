@@ -30,6 +30,7 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
 
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
 
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -50,7 +51,7 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="{{url('/')}}"><b>adminlte-laravel</b></a>
+                <a class="navbar-brand" href="{{url('/')}}"><b>Findesin</b></a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
@@ -91,13 +92,13 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
     <section id="tc" name="tc"></section>
 
     <!-- FEATURES WRAP -->
-    <div id="features">
+    <div id="features" class="container-donaciones">
         <div class="container">
             <div class="row">
-                <h1 class="centered">Donaciones con tarjeta de credito</h1>
+                <h1 class="centered size-title">Donaciones con tarjeta de credito</h1>
                 <br>
                 <br>
-                <div class="col-lg-6 centered">
+                <div class="col-lg-6 centered size-form">
                   <form class="form-horizontal">
                       <div class="form-group">
                       <label for="name" class="control-label col-xs-4">Nombre</label>
@@ -258,10 +259,10 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
     <section id="ps" name="ps"></section>
 
     <!-- FEATURES WRAP -->
-    <div id="features">
+    <div id="features" class="container-donaciones2">
         <div class="container">
             <div class="row">
-                <h1 class="centered">Donaciones de productos o servicios</h1>
+                <h1 class="centered size-title">Donaciones de productos o servicios</h1>
                 <br>
                 <br>
                 <div class="col-lg-6 centered">
@@ -327,7 +328,7 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
                   </div><!-- Accordion -->
                 </div>
 
-                <div class="col-lg-6">
+                <div class="col-lg-6 size-form">
                   <form class="form-horizontal">
                       <div class="form-group">
                       <label for="name" class="control-label col-xs-4">Nombre</label>
