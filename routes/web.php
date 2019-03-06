@@ -50,6 +50,11 @@ Route::get('/transactions', function () {
     }
 })->name('get_transactions');
 
+Route::get('/galery', function () {
+
+    return view('galery');
+
+})->name('get_galery');
 
 Route::group(['middleware' => 'auth'], function () {
 
@@ -59,6 +64,32 @@ Route::group(['middleware' => 'auth'], function () {
       if(auth()->user()->rol_id == 2)
         return view('donations');
     });
+
+    Route::get('/integrantes', 'IntegranteController@index')->name('companies.index');
+
+    /*detalle de usuarios */
+    Route::get('/integrantes/{Integrante}', 'IntegranteController@detail')
+        ->where('Integrante','[0-9]+')
+        ->name('companies.detail');
+
+    /* Definiendo ruta para crear usuarios*/
+    Route::get('/integrantes/nuevo','IntegranteController@new')->name('companies.new');
+    Route::post('/integrantes', 'IntegranteController@store');
+
+
+    /*Rutas para edición de usuario */
+    Route::get('/integrantes/{Integrante}/editar', 'IntegranteController@edit')
+        ->where('Integrante','[0-9]+')
+        ->name('companies.edit');
+
+    Route::put('/integrantes/{Integrante}','IntegranteController@update')->where('Integrante','[0-9]+');
+
+    /*Rutas para eliminarusuario */
+    Route::delete('/integrantes/eliminar/{Integrante}', 'IntegranteController@delete')
+        ->where('Integrante','[0-9]+')
+        ->name('companies.delete');
+
+
     //    Route::get('/link1', function ()    {
 //        // Uses Auth Middleware
 //    });
