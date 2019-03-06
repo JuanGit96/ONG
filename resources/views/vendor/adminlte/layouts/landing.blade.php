@@ -23,7 +23,7 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
     <meta name="twitter:site" content="@acachawiki" />
     <meta name="twitter:creator" content="@acacha1" />
 
-    <title>{{ trans('adminlte_lang::message.landingdescriptionpratt') }}</title>
+    <title>Findesin</title>
 
     <!-- Custom styles for this template -->
     <link href="{{ asset('/css/all-landing.css') }}" rel="stylesheet">
@@ -47,14 +47,14 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#"><b>adminlte-laravel</b></a>
+                <a class="navbar-brand" href="#"><b>Findesin</b></a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#home" class="smoothScroll">{{ trans('adminlte_lang::message.home') }}</a></li>
-                    <li><a href="#desc" class="smoothScroll">{{ trans('adminlte_lang::message.description') }}</a></li>
-                    <li><a href="#showcase" class="smoothScroll">{{ trans('adminlte_lang::message.showcase') }}</a></li>
-                    <li><a href="#contact" class="smoothScroll">{{ trans('adminlte_lang::message.contact') }}</a></li>
+                    <li class="active"><a href="#home" class="smoothScroll">inicio</a></li>
+                    <li><a href="#desc" class="smoothScroll">descripción</a></li>
+                    <li><a href="#showcase" class="smoothScroll">galería</a></li>
+                    <li><a href="#contact" class="smoothScroll">contacto</a></li>
                     @if (Auth::check())
                         <li class=""><a href="{{url('/donations')}}" class="smoothScroll">Donaciones</a></li>
                       <li class=""><a href="{{url('/transactions')}}" class="smoothScroll">Transacciones</a></li>
@@ -63,8 +63,8 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     @if (Auth::guest())
-                        <li><a href="{{ url('/login') }}">{{ trans('adminlte_lang::message.login') }}</a></li>
-                        <li><a href="{{ url('/register') }}">{{ trans('adminlte_lang::message.register') }}</a></li>
+                        <li><a href="{{ url('/login') }}">inicia sesion</a></li>
+                        <li><a href="{{ url('/register') }}">registrate</a></li>
                     @else
                     <li class="nav-item dropdown">
                         <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
@@ -109,13 +109,13 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
           <div class="findesin-info">
             <div class="title">Findesin</div>
             <p class="parrafo-title">
-              10 años trabajando en pro de la reconstrucción deltejido social en la población más vulnerablede nuestra ciudad (NIÑOS, ADOLECENTES Y JOVENES)
+              10 años trabajando en pro de la reconstrucción del tejido social en la población más vulnerable de nuestra ciudad (Niños, Adolescentes Y Jóvenes)
             </p>
           </div>
           <div class="container-nosotros">
             <div class="quienes-somos-info">
               <div class="titulos-cuadros">
-                Quienes somos
+                ¿Quienes somos?
               </div>
               <div class="parrafos-cuadros">
                 Somos una institución creada con el fin de brindar apoyo psicosocial, emocional y espiritual a niños, niñas, adolescentes y jóvenes cuyos derechos han sido vulnerados y no tienen la posibilidad de construir un proyecto de vida que les permita ser competitivos socialmente y a todo nivel.
@@ -126,7 +126,7 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
                 Lo que hacemos
               </div>
               <div class="parrafos-cuadros">
-                Deseñamos implementamos y administramos programas de prevención que nos ayudan a enfrentar las principales problematicas que afectan a la población que queremos alcanzar. Además trabajamos en la promoción de valoresy la restitición de derechos.
+                Diseñamos implementamos y administramos programas de prevención que nos ayudan a enfrentar las principales problemáticas que afectan a la población que queremos alcanzar. Además trabajamos en la promoción de valores y la restitución de derechos.
               </div>
             </div>
             </div>
@@ -143,8 +143,8 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
                 </div>
                 <div class="parrafos-cuadros">
                   *Lograr el 100% de cobertura económica necesaria para la manutención de cada una de las niñas beneficiarias del programa. <br>
-                  *Finalización de la sede administrativa de la fundación<br>
-                  *Compra del terreno donde actualmente funcioa la casa hogar y construcción de la misma de acuerdo a lasnecesidades y requerimientos de la institución <br>
+                  *Finalización de la sede administrativa de la fundación <br>
+                  *Compra del terreno donde actualmente funcioná la casa hogar y construcción de la misma de acuerdo a las necesidades y requerimientos de la institución. <br>
                 </div>
               </div>
               <div class="meta-imagen">
@@ -162,7 +162,7 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
                 <div class="parrafos-cuadros">
                   *Lograr el 100% de cobertura económica necesaria para la manutención de cada una de las niñas beneficiarias del programa. <br>
                   *Finalización de la sede administrativa de la fundación<br>
-                  *Compra del terreno donde actualmente funcioa la casa hogar y construcción de la misma de acuerdo a lasnecesidades y requerimientos de la institución <br>
+                  *Compra del terreno donde actualmente funciona la casa hogar y construcción de la misma de acuerdo a las necesidades y requerimientos de la institución <br>
                 </div>
               </div>
             </div>
@@ -183,10 +183,10 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
               </div>
               <div class="proyecto2-info">
                 <div class="titulos-cuadros">
-                  Hogares de proteccion al menor en riesgo
+                  Hogares de protección al menor en riesgo
                 </div>
                 <div class="parrafos-cuadros">
-                  Deseñamos implementamos y administramos programas de prevención que nos ayudan a enfrentar las principales problematicas que afectan a la población que queremos alcanzar. Además trabajamos en la promoción de valoresy la restitición de derechos.
+                  Diseñamos implementamos y administramos programas de prevención que nos ayudan a enfrentar las principales problemáticas que afectan a la población que queremos alcanzar. Además trabajamos en la promoción de valores y la restitución de derechos.
                 </div>
               </div>
               </div>
