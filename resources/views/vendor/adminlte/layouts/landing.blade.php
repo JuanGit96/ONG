@@ -51,10 +51,17 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
+<<<<<<< HEAD
                     <li class="active"><a href="#home" class="smoothScroll">inicio</a></li>
                     <li><a href="#desc" class="smoothScroll">descripción</a></li>
                     <li><a href="#showcase" class="smoothScroll">galería</a></li>
                     <li><a href="#contact" class="smoothScroll">contacto</a></li>
+=======
+                    <li class="active"><a href="#portada" class="smoothScroll">Home</a></li>
+                    <li><a href="#qs" class="smoothScroll">Sobre nosotros</a></li>
+                    <li><a href="#objetivos" class="smoothScroll">Objetivos</a></li>
+                    <li><a href="#proyectos" class="smoothScroll">Proyectos</a></li>
+>>>>>>> 8e50159aeecf8a5473da9407050773509cdf80bf
                     @if (Auth::check())
                         <li class=""><a href="{{url('/donations')}}" class="smoothScroll">Donaciones</a></li>
                       <li class=""><a href="{{url('/transactions')}}" class="smoothScroll">Transacciones</a></li>
@@ -91,7 +98,7 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
 
     <div class="all-home">
 
-<div class="container-portada">
+<div class="container-portada" id="portada">
         <div class="degradado"></div>
         <div class="texto-portada">
           <img src="{{ asset('/img/prueba.png') }}" alt="">
@@ -132,7 +139,7 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
             </div>
           </div>
 
-          <div class="metas">
+          <div class="metas" id="objetivos">
             <div class="findesin-info">
               <div class="title">Objetivos</div>
             </div>
@@ -172,7 +179,7 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
               <div class="title">Proyectos</div>
             </div>
 
-            <div class="container-proyectos">
+            <div class="container-proyectos" id="proyectos">
               <div class="proyecto1-info">
                 <div class="titulos-cuadros">
                   Generaciones en movimiento
@@ -242,6 +249,20 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
               </div>
             </div>
           </div>
+            <footer class="footer">
+              <div class="InfoFotter">
+                <p class="contactenos">Contactanos:</p>
+                <p>fundacionfindesin@gmail.com</p>
+                <p>Calle 53 No. 74 A 29 Normandia II Sector</p>
+                <p>cel. 3103498866 - 3046149994</p>
+            </div>
+            <div class="RedesSociales">
+              <a href="https://www.instagram.com/..." class="social Instagram"></a>
+              <a href="https://www.facebook.com/..."class="social Facebook"></a>
+              <a href="https://twitter.com/..."class="social Twitter"></a>
+              <a href="https://www.youtube.com/channel/..." class="social YouTube"></a>
+            </div>
+          </footer>
 				</div>
 
 <!--

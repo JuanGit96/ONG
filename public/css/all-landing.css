@@ -2509,8 +2509,8 @@ output {
   padding: 6px 12px;
   font-size: 14px;
   line-height: 1.42857143;
-  color: #555555;
-  background-color: #fff;
+  color: white !important;
+  background-color: transparent !important;
   background-image: none;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -3028,8 +3028,9 @@ fieldset[disabled] .btn-default.active {
 }
 .btn-primary {
   color: #fff;
-  background-color: #337ab7;
-  border-color: #2e6da4;
+  background-color: transparent !important;
+  border-color: white !important;
+  font-size: 20px !important;
 }
 .btn-primary:hover,
 .btn-primary:focus,
@@ -3037,9 +3038,10 @@ fieldset[disabled] .btn-default.active {
 .btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
-  color: #fff;
-  background-color: #286090;
-  border-color: #204d74;
+  color: black !important;
+  background-color: white !important;
+  border-color: white !important;
+  transition: 1s;
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -6510,6 +6512,22 @@ p {
 
 .centered {
     text-align: center;
+    color: white;
+    font-family: 'Great Vibes', cursive;
+}
+
+.size-title{
+  font-size: 60px;
+}
+
+.size-form{
+  font-size: 20px;
+  color: white;
+  font-family: 'Great Vibes', cursive;
+}
+
+.form-control{
+  font-family: sans-serif;
 }
 
 /* Links */
@@ -6798,7 +6816,7 @@ box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.1);
     position: relative;
     color: black;
     font-family: 'Great Vibes', cursive;
-    font-size: 30px;
+    font-size: 22px;
     top: 20px;
     margin: 20px;
 }
@@ -6813,7 +6831,7 @@ box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.1);
   color: black;
   width: 60%;
   top: 40px;
-  text-align: 16px;
+  font-size: 14px;
   text-align: justify;
   color: #ABA4A4;
 }
@@ -7080,4 +7098,75 @@ transition: 1s;
 .boton-mapa:hover a{
 color: black;
 transition: 1s;
+}
+
+.container-donaciones{
+  background-image: url('../img/imagen-donaciones.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container-donaciones2{
+  background-image: url('../img/imagen.donaciones2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.footer{
+    width: auto;
+    height: 180px;
+    /*background-image: url(images/footer-cole.png);
+    background-repeat: no-repeat;*/
+     background: rgba(98,125,77,1);
+      background: -moz-linear-gradient(top, rgba(98,125,77,1) 0%, rgba(31,59,8,1) 100%);
+      background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(98,125,77,1)), color-stop(100%, rgba(31,59,8,1)));
+      background: -webkit-linear-gradient(top, rgba(98,125,77,1) 0%, rgba(31,59,8,1) 100%);
+      background: -o-linear-gradient(top, rgba(98,125,77,1) 0%, rgba(31,59,8,1) 100%);
+      background: -ms-linear-gradient(top, rgba(98,125,77,1) 0%, rgba(31,59,8,1) 100%);
+      background: linear-gradient(to bottom, rgba(98,125,77,1) 0%, rgba(31,59,8,1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#627d4d', endColorstr='#1f3b08', GradientType=0 );
+  /*  background-color: #071907;*/
+    background-position: bottom;
+    display:  flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    color: #fff;
+}
+.InfoFotter{
+  display: block;
+  font-size: 22px;
+  margin-right: 160px;
+}
+.contactenos{
+  font-weight: bold;
+}
+.InfoFotter p {
+  margin: 0;
+}
+.RedesSociales{
+  display: flex;
+}
+.social{
+  background-size: 40px 40px;
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+  display: flex;
+  border-radius: 8px;
+}
+.Instagram{
+  background-image: url(../img/instagramblanco.svg);
+}
+.Facebook{
+  background-image: url(../img/facebookblanco.svg);
+}
+.Twitter{
+  background-image: url(../img/twitterblanco.svg);
+}
+.YouTube{
+  background-image: url(../img/youtubeblanco.svg);
 }
