@@ -51,17 +51,14 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-<<<<<<< HEAD
-                    <li class="active"><a href="#home" class="smoothScroll">inicio</a></li>
-                    <li><a href="#desc" class="smoothScroll">descripción</a></li>
-                    <li><a href="#showcase" class="smoothScroll">galería</a></li>
-                    <li><a href="#contact" class="smoothScroll">contacto</a></li>
-=======
-                    <li class="active"><a href="#portada" class="smoothScroll">Home</a></li>
+                    <!--<li class="active"><a href="#home" class="smoothScroll">inicio</a></li>-->
+                    <li><a href="#desc" class="smoothScroll">Descripción</a></li>
+                    <li><a href="#showcase" class="smoothScroll">Galería</a></li>
+                    <!--<li class="active"><a href="#portada" class="smoothScroll">Home</a></li>-->
                     <li><a href="#qs" class="smoothScroll">Sobre nosotros</a></li>
                     <li><a href="#objetivos" class="smoothScroll">Objetivos</a></li>
                     <li><a href="#proyectos" class="smoothScroll">Proyectos</a></li>
->>>>>>> 8e50159aeecf8a5473da9407050773509cdf80bf
+                    <li><a href="#contact" class="smoothScroll">Contacto</a></li>
                     @if (Auth::check())
                         <li class=""><a href="{{url('/donations')}}" class="smoothScroll">Donaciones</a></li>
                       <li class=""><a href="{{url('/transactions')}}" class="smoothScroll">Transacciones</a></li>
@@ -70,8 +67,8 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     @if (Auth::guest())
-                        <li><a href="{{ url('/login') }}">inicia sesion</a></li>
-                        <li><a href="{{ url('/register') }}">registrate</a></li>
+                        <li><a href="{{ url('/login') }}">Inicia sesion</a></li>
+                        <li><a href="{{ url('/register') }}">Registrate</a></li>
                     @else
                     <li class="nav-item dropdown">
                         <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>

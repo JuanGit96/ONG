@@ -23,7 +23,9 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
     <meta name="twitter:site" content="@acachawiki" />
     <meta name="twitter:creator" content="@acacha1" />
 
-    <title>{{ trans('adminlte_lang::message.landingdescriptionpratt') }}</title>
+    <title>
+
+    </title>
 
     <!-- Custom styles for this template -->
     <link href="{{ asset('/css/all-landing.css') }}" rel="stylesheet">
@@ -63,8 +65,8 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     @if (Auth::guest())
-                        <li><a href="{{ url('/login') }}">inicia sesion</a></li>
-                        <li><a href="{{ url('/register') }}">registrate</a></li>
+                        <li><a href="{{ url('/login') }}">Inicia Sesion</a></li>
+                        <li><a href="{{ url('/register') }}">Registrate</a></li>
                     @else
                     <li class="nav-item dropdown">
                         <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
