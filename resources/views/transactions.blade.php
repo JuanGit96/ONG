@@ -30,6 +30,9 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
 
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho" rel="stylesheet">
+
 
 </head>
 
@@ -85,7 +88,7 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
         <div class="container">
             <div class="row centered">
                 <div class="col-lg-12">
-                    <h1><b>Findesin<b></h1>
+                    <h1><b class="texto-transacciones">Findesin<b></h1>
                     <h3>Historico de transacciones</h3>
 
                     <table class="table">
@@ -114,9 +117,11 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
 
                 </div>
 
+
             </div>
         </div> <!--/ .container -->
     </div><!--/ #headerwrap -->
+    
 
 
 

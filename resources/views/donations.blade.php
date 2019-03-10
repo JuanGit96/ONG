@@ -33,6 +33,7 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -444,56 +445,21 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
             </div>
         </div><!--/ .container -->
     </div><!--/ #features -->
-
-
-    <section id="contact" name="contact"></section>
-    <div id="footerwrap">
-        <div class="container">
-            <div class="col-lg-5">
-                <h3>{{ trans('adminlte_lang::message.address') }}</h3>
-                <p>
-                    Av. Greenville 987,<br/>
-                    New York,<br/>
-                    90873<br/>
-                    United States
-                </p>
-            </div>
-
-            <div class="col-lg-7">
-                <h3>{{ trans('adminlte_lang::message.dropus') }}</h3>
-                <br>
-                <form role="form" action="#" method="post" enctype="plain">
-                    <div class="form-group">
-                        <label for="name1">{{ trans('adminlte_lang::message.yourname') }}</label>
-                        <input type="name" name="Name" class="form-control" id="name1" placeholder="{{ trans('adminlte_lang::message.yourname') }}">
-                    </div>
-                    <div class="form-group">
-                        <label for="email1">{{ trans('adminlte_lang::message.emailaddress') }}</label>
-                        <input type="email" name="Mail" class="form-control" id="email1" placeholder="{{ trans('adminlte_lang::message.enteremail') }}">
-                    </div>
-                    <div class="form-group">
-                        <label>{{ trans('adminlte_lang::message.yourtext') }}</label>
-                        <textarea class="form-control" name="Message" rows="3"></textarea>
-                    </div>
-                    <br>
-                    <button type="submit" class="btn btn-large btn-success">{{ trans('adminlte_lang::message.submit') }}</button>
-                </form>
-            </div>
-        </div>
+    <footer class="footer">
+      <div class="InfoFotter">
+        <p class="contactenos">Contactanos:</p>
+        <p><i class="material-icons">email</i> fundacionfindesin@gmail.com</p>
+        <p><i class="material-icons">location_on</i> Calle 53 No. 74 A 29 Normandia II Sector</p>
+        <p><i class="material-icons">phone</i> 3103498866 - 3046149994</p>
     </div>
-    <div id="c">
-        <div class="container">
-            <p>
-                <a href="https://github.com/acacha/adminlte-laravel"></a><b>admin-lte-laravel</b></a>. {{ trans('adminlte_lang::message.descriptionpackage') }}.<br/>
-                <strong>Copyright &copy; 2015 <a href="http://acacha.org">Acacha.org</a>.</strong> {{ trans('adminlte_lang::message.createdby') }} <a href="http://acacha.org/sergitur">Sergi Tur Badenas</a>. {{ trans('adminlte_lang::message.seecode') }} <a href="https://github.com/acacha/adminlte-laravel">Github</a>
-                <br/>
-                AdminLTE {{ trans('adminlte_lang::message.createdby') }} Abdullah Almsaeed <a href="https://almsaeedstudio.com/">almsaeedstudio.com</a>
-                <br/>
-                 Pratt Landing Page {{ trans('adminlte_lang::message.createdby') }} <a href="http://www.blacktie.co">BLACKTIE.CO</a>
-            </p>
-
-        </div>
+    <div class="RedesSociales">
+      <p class="contactenos">Buscanos en:</p>
+      <a href="https://www.instagram.com/..." class="social Instagram"> <div class="texto-redes">Instagram</div> </a>
+      <a href="https://www.facebook.com/..."class="social Facebook"><div class="texto-redes">Facebook</div> </a>
+      <a href="https://twitter.com/..."class="social Twitter"><div class="texto-redes">Twitter</div> </a>
+      <a href="https://www.youtube.com/channel/..." class="social YouTube"><div class="texto-redes">Youtube</div> </a>
     </div>
+  </footer>
 </div>
 
 <!-- Bootstrap core JavaScript
