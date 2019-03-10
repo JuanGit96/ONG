@@ -101,18 +101,30 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
                 <br>
                 <br>
                 <div class="col-lg-6 centered size-form">
-                  <form class="form-horizontal">
-                      <div class="form-group">
+                  <form class="form-horizontal"  method="post" action="https://sandbox.checkout.payulatam.com/ppp-web-gateway-payu/">
+                    <input name="merchantId"    type="hidden"  value="508029"   >
+                    <input name="accountId"     type="hidden"  value="512321" >
+                    <input name="description"   type="hidden"  value="Fundacion PAYU"  >
+                    <input name="referenceCode" type="hidden"  value="7678678" >
+                    <input name="tax"   type="hidden"  value="0"  >
+                    <input name="taxReturnBase" type="hidden"  value="0" >
+                    <input name="currency"      type="hidden"  value="COP" >
+                    <input name="signature"   type="hidden"  value="a03d45cc112f199182e8f868d17e64c2"  >
+                    <input name="test"  type="hidden"  value="1" >
+                    <input name="responseUrl"    type="hidden"  value="http://localhost:8000/donations" >
+                    <input name="confirmationUrl"    type="hidden"  value="http://localhost:8000/donations" >
+                    <div class="form-group">
                       <label for="name" class="control-label col-xs-4">Nombre</label>
                       <div class="col-xs-8">
                        <div class="input-group">
                          <div class="input-group-addon">
                            <i class="fa fa-address-book-o"></i>
                          </div>
-                         <input id="name" name="name" type="text" required="required" class="form-control">
+                         <input id="name" name="payerFullName" type="text" required="required" class="form-control">
                        </div>
                       </div>
                       </div>
+
                       <div class="form-group">
                       <label for="usr_apellido" class="control-label col-xs-4">Apellido</label>
                       <div class="col-xs-8">
@@ -151,7 +163,18 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
                          <div class="input-group-addon">
                            <i class="fa fa-address-card-o"></i>
                          </div>
-                         <input id="text" name="text" type="text" required="required" class="form-control">
+                         <input id="text" name="payerDocument" type="text" required="required" class="form-control">
+                       </div>
+                      </div>
+                      </div>
+                      <div class="form-group">
+                      <label for="tpo_id" class="control-label col-xs-4">Valor a donar</label>
+                      <div class="col-xs-8">
+                       <div class="input-group">
+                         <div class="input-group-addon">
+                           <i class="fa fa-address-card-o"></i>
+                         </div>
+                         <input id="text" name="amount" type="text" required="required" class="form-control">
                        </div>
                       </div>
                       </div>
@@ -162,7 +185,7 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
                          <div class="input-group-addon">
                            <i class="fa fa-envelope-open-o"></i>
                          </div>
-                         <input id="email" name="email" type="text" required="required" class="form-control">
+                         <input id="email" name="buyerEmail" type="text" required="required" class="form-control">
                        </div>
                       </div>
                       </div>
@@ -173,7 +196,7 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
                          <div class="input-group-addon">
                            <i class="fa fa-phone"></i>
                          </div>
-                         <input id="usr_telefono" name="usr_telefono" type="text" required="required" class="form-control">
+                         <input id="usr_telefono" name="mobilePhone" type="text" required="required" class="form-control">
                        </div>
                       </div>
                       </div>
