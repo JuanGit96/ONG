@@ -23,6 +23,9 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
     <meta name="twitter:site" content="@acachawiki" />
     <meta name="twitter:creator" content="@acacha1" />
 
+    <!-- Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.css" integrity="sha256-CNwnGWPO03a1kOlAsGaH5g8P3dFaqFqqGFV/1nkX5OU=" crossorigin="anonymous" />
+
     <title>{{ trans('adminlte_lang::message.landingdescriptionpratt') }}</title>
 
     <!-- Custom styles for this template -->
@@ -30,12 +33,6 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
 
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
-    <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
-
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
 
 </head>
 
@@ -51,15 +48,15 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="{{url('/')}}"><b>Findesin</b></a>
+                <a class="navbar-brand" href="/"><b>Findesin</b></a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#tc" class="smoothScroll">Tarjeta de credito</a></li>
-                    <li><a href="#ps" class="smoothScroll">Productos o servicios</a></li>
-                    <li><a href="#contact" class="smoothScroll">{{ trans('adminlte_lang::message.contact') }}</a></li>
-                    <li><a href="{{url('transactions')}}" class="smoothScroll">Transacciones</a></li>
-
+                    <li class=""><a href="{{url('/donations')}}" class="smoothScroll">Donaciones</a></li>
+                    <li class="active"><a href="{{url('/transactions')}}" class="smoothScroll">Transacciones</a></li>
+                    @if(auth()->user()->rol_id == 1)
+                        <li class="active"><a href="{{url('/integrantes')}}" class="smoothScroll">CRUD Integrantes</a></li>
+                    @endif
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     @if (Auth::guest())
@@ -89,13 +86,12 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
         </div>
     </div>
 
-
     @yield('content')
 
 
+</div><!--/ #headerwrap -->
 
 
-</div>
 
 <!-- Bootstrap core JavaScript
 ================================================== -->

@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Integrante;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\User;
 use App\Profession;
-use App\Company;
 use Illuminate\Validation\Rule;
 
 
@@ -17,9 +17,9 @@ class IntegranteController extends Controller
 {
     public function index()
     {
-        $integrante = Integrante::paginate(10); // con paginación
+        $integrantes = Integrante::paginate(10); // con paginación
         
-        return view('integrantes.index',compact('integrante'));
+        return view('integrantes.index',compact('integrantes'));
     }
 
     public function detail(Integrante $integrante)
@@ -35,24 +35,42 @@ class IntegranteController extends Controller
 
     public function store()
     {
-        $data = request()->validate([
+        $data = request()->validate(
+        [
             'int_nombre' => 'required',
             'int_edad' => 'required',
             'int_identificacion' => 'required',
-            'int_foto' => 'required'
-        ],[
+            'int_foto' => 'required|image'
+        ],
+        [
             'int_nombre.required' => 'El campo nombre es obligatorio',
             'int_edad.required' => 'El campo edad es obligatorio',
             'int_identificacion.required' => 'El campo identificacion es obligatorio',
             'int_foto.required' => 'El campo foto es obligatorio',
+            'int_foto.image' => 'Por favor, no suba archvivos diferentes a una foto'
         ]);
 
-        Company::create([
-            'int_nombre' => $data['name'],
-            'int_edad' => $data['activity'],
-            'int_identificacion' => $data['address'],
-            'int_foto' => $data['seo'],
-        ]);
+        try
+        {
+            DB::commit();
+
+            Integrante::create([
+                'int_nombre' => $data['int_nombre'],
+                'int_edad' => $data['int_edad'],
+                'int_identificacion' => $data['int_identificacion'],
+                'int_foto' => request()->file('int_foto')->store('public'),
+            ]);
+
+
+
+        }
+        catch (\Exception $exception)
+        {
+            DB::rollBack();
+
+            dd($exception);
+        }
+
 
         return redirect()->route('integrantes.index');
     }
@@ -68,13 +86,20 @@ class IntegranteController extends Controller
             'int_nombre' => 'required',
             'int_edad' => 'required',
             'int_identificacion' => 'required',
-            'int_foto' => 'required'
-        ],[
+            'int_foto' => 'image|nullable'
+        ],
+        [
             'int_nombre.required' => 'El campo nombre es obligatorio',
             'int_edad.required' => 'El campo edad es obligatorio',
             'int_identificacion.required' => 'El campo identificacion es obligatorio',
-            'int_foto.required' => 'El campo foto es obligatorio',
         ]);
+
+        if (request()->hasFile('int_foto'))
+        {
+            \Storage::delete($integrante->int_foto);
+
+            $data["int_foto"] = request()->file('int_foto')->store('public');
+        }
 
         $integrante->update($data);//actualizando datos con ELOQUENT
 

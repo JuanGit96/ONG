@@ -1,8 +1,8 @@
-@extends('integrantes.layouts.app')
+@extends('layouts.app2')
 
 @section('content')
 <div class="background">
-    <h1 class="title">Editar Integrante {{$girl->int_name}}</h1>
+    <h1 class="title">Editar Integrante {{$integrante->int_name}}</h1>
 </div>
 
 @if($errors->any())<!--Si tenemos algun error-->
@@ -15,30 +15,30 @@
     </ul>
 </div>
 @endif
-<form method="POST" action="{{url('integrantes')}}/{{$girls->int_id}}">
+<form method="POST" action="{{url('integrantes')}}/{{$integrante->int_id}}" enctype="multipart/form-data">
 {{ method_field('PUT') }}
 {{ csrf_field() }}<!--Protección de ataques laravel(token)-->
 
     <div class="form-group">
         <label for="int_nombre">Nombre</label>
-        <input type="text" class="form-control" id="int_nombre" name="int_nombre" value="{{old('int_nombre',$girl->int_nombre)}}"
+        <input type="text" class="form-control" id="int_nombre" name="int_nombre" value="{{old('int_nombre',$integrante->int_nombre)}}"
                aria-describedby="nameHelp" placeholder="">
     </div>
     <div class="form-group">
         <label for="int_edad">Edad</label>
-        <input type="number" class="form-control" id="int_edad" name="int_edad" value="{{old('int_edad',$girl->int_edad)}}"
+        <input type="number" class="form-control" id="int_edad" name="int_edad" value="{{old('int_edad',$integrante->int_edad)}}"
                aria-describedby="activityHelp" placeholder="">
     </div>
 
     <div class="form-group">
         <label for="int_identificacion">Identificacion</label>
-        <input type="text" class="form-control" id="int_identificacion" name="int_identificacion" value="{{old('int_identificacion',$girl->int_identificacion)}}"
+        <input type="text" class="form-control" id="int_identificacion" name="int_identificacion" value="{{old('int_identificacion',$integrante->int_identificacion)}}"
                aria-describedby="seoHelp" placeholder="">
     </div>
 
     <div class="form-group">
         <label for="int_foto">Foto</label>
-        <input type="text" class="form-control" id="int_foto" name="int_foto" value="{{old('int_foto',$girl->int_foto)}}"
+        <input type="file" class="form-control" id="int_foto" name="int_foto" value="{{old('int_foto',$integrante->int_foto)}}"
                aria-describedby="imageHelp" placeholder="">
     </div>
 

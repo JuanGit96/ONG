@@ -65,29 +65,29 @@ Route::group(['middleware' => 'auth'], function () {
         return view('donations');
     });
 
-    Route::get('/integrantes', 'IntegranteController@index')->name('companies.index');
+    Route::get('/integrantes', 'IntegranteController@index')->name('integrantes.index');
 
     /*detalle de usuarios */
-    Route::get('/integrantes/{Integrante}', 'IntegranteController@detail')
+    Route::get('/integrantes/{integrante}', 'IntegranteController@detail')
         ->where('Integrante','[0-9]+')
-        ->name('companies.detail');
+        ->name('integrantes.detail');
 
     /* Definiendo ruta para crear usuarios*/
-    Route::get('/integrantes/nuevo','IntegranteController@new')->name('companies.new');
+    Route::get('/integrantes/nuevo','IntegranteController@new')->name('integrantes.new');
     Route::post('/integrantes', 'IntegranteController@store');
 
 
     /*Rutas para edición de usuario */
-    Route::get('/integrantes/{Integrante}/editar', 'IntegranteController@edit')
+    Route::get('/integrantes/{integrante}/editar', 'IntegranteController@edit')
         ->where('Integrante','[0-9]+')
-        ->name('companies.edit');
+        ->name('integrantes.edit');
 
-    Route::put('/integrantes/{Integrante}','IntegranteController@update')->where('Integrante','[0-9]+');
+    Route::put('/integrantes/{integrante}','IntegranteController@update')->where('Integrante','[0-9]+');
 
     /*Rutas para eliminarusuario */
-    Route::delete('/integrantes/eliminar/{Integrante}', 'IntegranteController@delete')
+    Route::delete('/integrantes/eliminar/{integrante}', 'IntegranteController@delete')
         ->where('Integrante','[0-9]+')
-        ->name('companies.delete');
+        ->name('integrantes.delete');
 
 
     //    Route::get('/link1', function ()    {
