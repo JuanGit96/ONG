@@ -60,7 +60,7 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="#tc" class="smoothScroll">Tarjeta de credito</a></li>
                     <li><a href="#ps" class="smoothScroll">Productos o servicios</a></li>
-                    <li><a href="#contact" class="smoothScroll">{{ trans('adminlte_lang::message.contact') }}</a></li>
+                    <li><a href="#contact" class="smoothScroll">Contactenos</a></li>
                     <li><a href="{{url('transactions')}}" class="smoothScroll">Transacciones</a></li>
                     @if(auth()->user()->rol_id == 1)
                         <li class="{{isset($integrantesActive) ? $integrantesActiveor : ''}}"><a href="{{url('/integrantes')}}" class="smoothScroll">CRUD Integrantes</a></li>
@@ -217,19 +217,19 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
                 </div>
 
                 <div class="col-lg-6">
-                    <h3>{{ trans('adminlte_lang::message.features') }}</h3>
+                    <h3>Ten en cuenta</h3>
                     <br>
                     <!-- ACCORDION -->
                     <div class="accordion ac" id="accordion2">
                         <div class="accordion-group">
                             <div class="accordion-heading">
                                 <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
-                                    {{ trans('adminlte_lang::message.design') }}
+                                    ¿Por qué donar?
                                 </a>
                             </div><!-- /accordion-heading -->
                             <div id="collapseOne" class="accordion-body collapse in">
                                 <div class="accordion-inner">
-                                    <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                  <p>Donar en un acto lleno de  valiosa energia cada aporte que hagas hará más feliz y ayudara nuestras niñas, colabora con nosotros para mejorar la vida de cada una de ellas.</p>
                                 </div><!-- /accordion-inner -->
                             </div><!-- /collapse -->
                         </div><!-- /accordion-group -->
@@ -238,12 +238,12 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
                         <div class="accordion-group">
                             <div class="accordion-heading">
                                 <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
-                                    {{ trans('adminlte_lang::message.retina') }}
+                                    ¿Cómo donar?
                                 </a>
                             </div>
                             <div id="collapseTwo" class="accordion-body collapse">
                                 <div class="accordion-inner">
-                                    <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                    <p>Donar es muy facil!!<br> llena tus datos, una vez llenos vale click en el boton enviar, te dirigira a la pagina de payulatam, alli podras hacer la transaccion con la tarjeta de credito que prefieras.</p>
                                 </div><!-- /accordion-inner -->
                             </div><!-- /collapse -->
                         </div><!-- /accordion-group -->
@@ -252,12 +252,12 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
                         <div class="accordion-group">
                             <div class="accordion-heading">
                                 <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
-                                    {{ trans('adminlte_lang::message.support') }}
+                                    Con tu ayuda
                                 </a>
                             </div>
                             <div id="collapseThree" class="accordion-body collapse">
                                 <div class="accordion-inner">
-                                    <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                    <p>tu ayuda es muy importante para nosotros, Con tu ayuda podremos brindar una mejor atencion a nuestra fundacion, como tambien podremos sacar a flote nuestros proyectos.</p>
                                 </div><!-- /accordion-inner -->
                             </div><!-- /collapse -->
                         </div><!-- /accordion-group -->
@@ -266,12 +266,12 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
                         <div class="accordion-group">
                             <div class="accordion-heading">
                                 <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFour">
-                                    {{ trans('adminlte_lang::message.responsive') }}
+                                    <!--{{ trans('adminlte_lang::message.responsive') }}-->
                                 </a>
                             </div>
                             <div id="collapseFour" class="accordion-body collapse">
                                 <div class="accordion-inner">
-                                    <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                    <!--<p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>-->
                                 </div><!-- /accordion-inner -->
                             </div><!-- /collapse -->
                         </div><!-- /accordion-group -->
@@ -294,19 +294,19 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
                 <br>
                 <br>
                 <div class="col-lg-6 centered">
-                  <h3>{{ trans('adminlte_lang::message.features') }}</h3>
+                  <h3>Somos findesin</h3>
                   <br>
                   <!-- ACCORDION -->
                   <div class="accordion ac" id="accordion2">
                       <div class="accordion-group">
                           <div class="accordion-heading">
                               <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
-                                  {{ trans('adminlte_lang::message.design') }}
+                                  Donar es la mejor forma de ayudar
                               </a>
                           </div><!-- /accordion-heading -->
                           <div id="collapseOne" class="accordion-body collapse in">
                               <div class="accordion-inner">
-                                  <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                  <p>Con una donación, ayudarás a cambiar las vidas de niñas y adolescentes en Colombia y en el mundo. Cualquier monto es muy importante para que nuestras acciones sean continuas y efectivas.</p>
                               </div><!-- /accordion-inner -->
                           </div><!-- /collapse -->
                       </div><!-- /accordion-group -->
@@ -315,12 +315,12 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
                       <div class="accordion-group">
                           <div class="accordion-heading">
                               <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
-                                  {{ trans('adminlte_lang::message.retina') }}
+                                 <!--  {{ trans('adminlte_lang::message.retina') }}-->
                               </a>
                           </div>
                           <div id="collapseTwo" class="accordion-body collapse">
                               <div class="accordion-inner">
-                                  <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                  <!--<p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>-->
                               </div><!-- /accordion-inner -->
                           </div><!-- /collapse -->
                       </div><!-- /accordion-group -->
@@ -329,12 +329,12 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
                       <div class="accordion-group">
                           <div class="accordion-heading">
                               <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
-                                  {{ trans('adminlte_lang::message.support') }}
+                                  <!--{{ trans('adminlte_lang::message.support') }}-->
                               </a>
                           </div>
                           <div id="collapseThree" class="accordion-body collapse">
                               <div class="accordion-inner">
-                                  <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                  <p><!--It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>-->
                               </div><!-- /accordion-inner -->
                           </div><!-- /collapse -->
                       </div><!-- /accordion-group -->
@@ -343,12 +343,12 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
                       <div class="accordion-group">
                           <div class="accordion-heading">
                               <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFour">
-                                  {{ trans('adminlte_lang::message.responsive') }}
+                                  <!--{{ trans('adminlte_lang::message.responsive') }}-->
                               </a>
                           </div>
                           <div id="collapseFour" class="accordion-body collapse">
                               <div class="accordion-inner">
-                                  <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                  <!--<p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>-->
                               </div><!-- /accordion-inner -->
                           </div><!-- /collapse -->
                       </div><!-- /accordion-group -->
