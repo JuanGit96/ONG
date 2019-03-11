@@ -59,6 +59,7 @@ Route::get('/galery', function () {
 Route::group(['middleware' => 'auth'], function () {
 
     Route::get('/home', function () {
+
       if(auth()->user()->rol_id == 1)
         return redirect()->route('get_transactions');
       if(auth()->user()->rol_id == 2)
@@ -67,15 +68,15 @@ Route::group(['middleware' => 'auth'], function () {
 
     Route::get('/integrantes', 'IntegranteController@index')->name('integrantes.index');
 
-    /*detalle de usuarios */
-    Route::get('/integrantes/{integrante}', 'IntegranteController@detail')
-        ->where('Integrante','[0-9]+')
-        ->name('integrantes.detail');
 
     /* Definiendo ruta para crear usuarios*/
     Route::get('/integrantes/nuevo','IntegranteController@new')->name('integrantes.new');
     Route::post('/integrantes', 'IntegranteController@store');
 
+    /*detalle de usuarios */
+    Route::get('/integrantes/{integrante}', 'IntegranteController@detail')
+        ->where('Integrante','[0-9]+')
+        ->name('integrantes.detail');
 
     /*Rutas para edición de usuario */
     Route::get('/integrantes/{integrante}/editar', 'IntegranteController@edit')
