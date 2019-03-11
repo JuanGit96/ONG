@@ -12,7 +12,7 @@
                         @csrf
 
                         <div class="form-group row">
-                            <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Name') }}</label>
+                            <label for="name" class="col-md-4 col-form-label text-md-right">Nombre</label>
 
                             <div class="col-md-6">
                                 <input id="name" type="text" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" name="name" value="{{ old('name') }}" required autofocus>
@@ -33,14 +33,14 @@
 
                                 @if ($errors->has('usr_apellido'))
                                     <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('usr_apellido') }}</strong>
+                                        <strong>Apellido</strong>
                                     </span>
                                 @endif
                             </div>
                         </div>
 
                         <div class="form-group row">
-                          <label for="tdo_idtdo_id" class="col-md-4 col-form-label text-md-right">{{ __('Identification Type') }}</label>
+                          <label for="tdo_idtdo_id" class="col-md-4 col-form-label text-md-right">Tipo de identificacion</label>
                           <div class="col-md-6">
                             <select class="form-control" id="tdo_id" name="tdo_id">
                               <option selected disabled>Seleccone</option>
@@ -59,21 +59,21 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="usr_numero_documento" class="col-md-4 col-form-label text-md-right">{{ __('Identification Number') }}</label>
+                            <label for="usr_numero_documento" class="col-md-4 col-form-label text-md-right">numero de identificacion</label>
 
                             <div class="col-md-6">
                                 <input id="usr_numero_documento" type="text" class="form-control{{ $errors->has('usr_numero_documento') ? ' is-invalid' : '' }}" name="usr_numero_documento" value="{{ old('usr_numero_documento') }}" required autofocus>
 
                                 @if ($errors->has('usr_numero_documento'))
                                     <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('usr_numero_documento') }}</strong>
+                                        <strong>Numero de documento</strong>
                                     </span>
                                 @endif
                             </div>
                         </div>
 
                         <div class="form-group row">
-                          <label for="tpe_id" class="col-md-4 col-form-label text-md-right">{{ __('Person Type') }}</label>
+                          <label for="tpe_id" class="col-md-4 col-form-label text-md-right">tipo de persona</label>
                           <div class="col-md-6">
                             <select class="form-control" id="tpe_id" name="tpe_id">
                               <option selected disabled>Seleccione</option>
@@ -91,7 +91,7 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="usr_telefono" class="col-md-4 col-form-label text-md-right">{{ __('Phone') }}</label>
+                            <label for="usr_telefono" class="col-md-4 col-form-label text-md-right">{Telefono</label>
 
                             <div class="col-md-6">
                                 <input id="usr_telefono" type="text" class="form-control{{ $errors->has('usr_telefono') ? ' is-invalid' : '' }}" name="usr_telefono" value="{{ old('usr_telefono') }}" required>
@@ -105,7 +105,7 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="usr_ciudad" class="col-md-4 col-form-label text-md-right">{{ __('City') }}</label>
+                            <label for="usr_ciudad" class="col-md-4 col-form-label text-md-right">Ciudad</label>
 
                             <div class="col-md-6">
                                 <input id="usr_ciudad" type="text" class="form-control{{ $errors->has('usr_ciudad') ? ' is-invalid' : '' }}" name="usr_ciudad" value="{{ old('usr_ciudad') }}" required>
@@ -119,7 +119,7 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
+                            <label for="email" class="col-md-4 col-form-label text-md-right">Correo electronico</label>
 
                             <div class="col-md-6">
                                 <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required>
@@ -133,7 +133,7 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
+                            <label for="password" class="col-md-4 col-form-label text-md-right">Contraseña</label>
 
                             <div class="col-md-6">
                                 <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
@@ -147,7 +147,7 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Confirm Password') }}</label>
+                            <label for="password-confirm" class="col-md-4 col-form-label text-md-right">Confirma contraseña</label>
 
                             <div class="col-md-6">
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
@@ -157,7 +157,7 @@
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
                                 <button type="submit" class="btn btn-primary">
-                                    {{ __('Register') }}
+                                    Registar
                                 </button>
                             </div>
                         </div>

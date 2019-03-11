@@ -52,10 +52,10 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li class=""><a href="{{url('/donations')}}" class="smoothScroll">Donaciones</a></li>
-                    <li class="active"><a href="{{url('/transactions')}}" class="smoothScroll">Transacciones</a></li>
+                    <li class="{{isset($donatiosActive) ? $donatiosActive  : ''}}"><a href="{{url('/donations')}}" class="smoothScroll">Donaciones</a></li>
+                    <li class="{{isset($transactionsActive) ? $transactionsActive : ''}}"><a href="{{url('/transactions')}}" class="smoothScroll">Transacciones</a></li>
                     @if(auth()->user()->rol_id == 1)
-                        <li class="active"><a href="{{url('/integrantes')}}" class="smoothScroll">CRUD Integrantes</a></li>
+                        <li class="{{isset($integrantesActive) ? $integrantesActiveor : ''}}"><a href="{{url('/integrantes')}}" class="smoothScroll">CRUD Integrantes</a></li>
                     @endif
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
@@ -87,6 +87,22 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
     </div>
 
     @yield('content')
+
+    <footer class="footer">
+        <div class="InfoFotter">
+            <p class="contactenos">Contactanos:</p>
+            <p><i class="material-icons">email</i> fundacionfindesin@gmail.com</p>
+            <p><i class="material-icons">location_on</i> Calle 53 No. 74 A 29 Normandia II Sector</p>
+            <p><i class="material-icons">phone</i> 3103498866 - 3046149994</p>
+        </div>
+        <div class="RedesSociales">
+            <p class="contactenos">Buscanos en:</p>
+            <a href="https://www.instagram.com/..." class="social Instagram"> <div class="texto-redes">Instagram</div> </a>
+            <a href="https://www.facebook.com/..."class="social Facebook"><div class="texto-redes">Facebook</div> </a>
+            <a href="https://twitter.com/..."class="social Twitter"><div class="texto-redes">Twitter</div> </a>
+            <a href="https://www.youtube.com/channel/..." class="social YouTube"><div class="texto-redes">Youtube</div> </a>
+        </div>
+    </footer>
 
 
 </div><!--/ #headerwrap -->

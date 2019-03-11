@@ -1,3 +1,8 @@
+@php
+$transactionsActive = "active";
+
+@endphp
+
 @extends('layouts.app2')
 
 @section('content')
@@ -32,7 +37,6 @@
                 {{$transactions->render()}}
 
             </div>
-
         </div>
     </div> <!--/ .container -->
 @endsection

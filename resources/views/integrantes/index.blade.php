@@ -31,7 +31,7 @@
         <td> {{$integrante->int_nombre}}</td>
         <td> {{$integrante->int_edad}}</td>
         <td> {{$integrante->int_identificacion}}</td>
-        <td> <img src="{{url("$integrante->int_foto")}}"></td>
+        <td> <img width="50px" src="{{Storage::url("$integrante->int_foto")}}"></td>
         <td class="action">
             <form method="POST" action="{{route('integrantes.delete',$integrante->int_id)}}">
             {{ csrf_field() }}<!--Protección de ataques laravel(token)-->

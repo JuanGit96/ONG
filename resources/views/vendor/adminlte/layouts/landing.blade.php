@@ -23,7 +23,7 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
     <meta name="twitter:site" content="@acachawiki" />
     <meta name="twitter:creator" content="@acacha1" />
 
-    <title>{{ trans('adminlte_lang::message.landingdescriptionpratt') }}</title>
+    <title>Findesin</title>
 
     <!-- Custom styles for this template -->
     <link href="{{ asset('/css/all-landing.css') }}" rel="stylesheet">
@@ -51,20 +51,26 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#portada" class="smoothScroll">Home</a></li>
+                    <!--<li class="active"><a href="#home" class="smoothScroll">inicio</a></li>-->
+
+                    <!--<li class="active"><a href="#portada" class="smoothScroll">Home</a></li>-->
                     <li><a href="#qs" class="smoothScroll">Sobre nosotros</a></li>
                     <li><a href="#objetivos" class="smoothScroll">Objetivos</a></li>
                     <li><a href="#proyectos" class="smoothScroll">Proyectos</a></li>
+                    <li><a href="#showcase" class="smoothScroll">Galería</a></li>
                     @if (Auth::check())
                         <li class=""><a href="{{url('/donations')}}" class="smoothScroll">Donaciones</a></li>
                       <li class=""><a href="{{url('/transactions')}}" class="smoothScroll">Transacciones</a></li>
+                        @if(auth()->user()->rol_id == 1)
+                            <li class="{{isset($integrantesActive) ? $integrantesActiveor : ''}}"><a href="{{url('/integrantes')}}" class="smoothScroll">CRUD Integrantes</a></li>
+                        @endif
                     @endif
 
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     @if (Auth::guest())
-                        <li><a href="{{ url('/login') }}">{{ trans('adminlte_lang::message.login') }}</a></li>
-                        <li><a href="{{ url('/register') }}">{{ trans('adminlte_lang::message.register') }}</a></li>
+                        <li><a href="{{ url('/login') }}">Inicia sesion</a></li>
+                        <li><a href="{{ url('/register') }}">Registrate</a></li>
                     @else
                     <li class="nav-item dropdown">
                         <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
@@ -109,13 +115,13 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
           <div class="findesin-info">
             <div class="title">Findesin</div>
             <p class="parrafo-title">
-              10 años trabajando en pro de la reconstrucción deltejido social en la población más vulnerablede nuestra ciudad (NIÑOS, ADOLECENTES Y JOVENES)
+              10 años trabajando en pro de la reconstrucción del tejido social en la población más vulnerable de nuestra ciudad (Niños, Adolescentes Y Jóvenes)
             </p>
           </div>
           <div class="container-nosotros">
             <div class="quienes-somos-info">
               <div class="titulos-cuadros">
-                Quienes somos
+                ¿Quienes somos?
               </div>
               <div class="parrafos-cuadros">
                 Somos una institución creada con el fin de brindar apoyo psicosocial, emocional y espiritual a niños, niñas, adolescentes y jóvenes cuyos derechos han sido vulnerados y no tienen la posibilidad de construir un proyecto de vida que les permita ser competitivos socialmente y a todo nivel.
@@ -126,7 +132,7 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
                 Lo que hacemos
               </div>
               <div class="parrafos-cuadros">
-                Deseñamos implementamos y administramos programas de prevención que nos ayudan a enfrentar las principales problematicas que afectan a la población que queremos alcanzar. Además trabajamos en la promoción de valoresy la restitición de derechos.
+                Diseñamos implementamos y administramos programas de prevención que nos ayudan a enfrentar las principales problemáticas que afectan a la población que queremos alcanzar. Además trabajamos en la promoción de valores y la restitución de derechos.
               </div>
             </div>
             </div>
@@ -143,8 +149,8 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
                 </div>
                 <div class="parrafos-cuadros">
                   *Lograr el 100% de cobertura económica necesaria para la manutención de cada una de las niñas beneficiarias del programa. <br>
-                  *Finalización de la sede administrativa de la fundación<br>
-                  *Compra del terreno donde actualmente funcioa la casa hogar y construcción de la misma de acuerdo a lasnecesidades y requerimientos de la institución <br>
+                  *Finalización de la sede administrativa de la fundación <br>
+                  *Compra del terreno donde actualmente funcioná la casa hogar y construcción de la misma de acuerdo a las necesidades y requerimientos de la institución. <br>
                 </div>
               </div>
               <div class="meta-imagen">
@@ -162,7 +168,7 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
                 <div class="parrafos-cuadros">
                   *Lograr el 100% de cobertura económica necesaria para la manutención de cada una de las niñas beneficiarias del programa. <br>
                   *Finalización de la sede administrativa de la fundación<br>
-                  *Compra del terreno donde actualmente funcioa la casa hogar y construcción de la misma de acuerdo a lasnecesidades y requerimientos de la institución <br>
+                  *Compra del terreno donde actualmente funciona la casa hogar y construcción de la misma de acuerdo a las necesidades y requerimientos de la institución <br>
                 </div>
               </div>
             </div>
@@ -183,10 +189,10 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
               </div>
               <div class="proyecto2-info">
                 <div class="titulos-cuadros">
-                  Hogares de proteccion al menor en riesgo
+                  Hogares de protección al menor en riesgo
                 </div>
                 <div class="parrafos-cuadros">
-                  Deseñamos implementamos y administramos programas de prevención que nos ayudan a enfrentar las principales problematicas que afectan a la población que queremos alcanzar. Además trabajamos en la promoción de valoresy la restitición de derechos.
+                  Diseñamos implementamos y administramos programas de prevención que nos ayudan a enfrentar las principales problemáticas que afectan a la población que queremos alcanzar. Además trabajamos en la promoción de valores y la restitución de derechos.
                 </div>
               </div>
               </div>
@@ -242,6 +248,21 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
               </div>
             </div>
           </div>
+            <footer class="footer">
+              <div class="InfoFotter">
+                <p class="contactenos">Contactanos:</p>
+                <p><i class="material-icons">email</i> fundacionfindesin@gmail.com</p>
+                <p><i class="material-icons">location_on</i> Calle 53 No. 74 A 29 Normandia II Sector</p>
+                <p><i class="material-icons">phone</i> 3103498866 - 3046149994</p>
+            </div>
+            <div class="RedesSociales">
+              <p class="contactenos">Buscanos en:</p>
+              <a href="https://www.instagram.com/..." class="social Instagram"> <div class="texto-redes">Instagram</div> </a>
+              <a href="https://www.facebook.com/..."class="social Facebook"><div class="texto-redes">Facebook</div> </a>
+              <a href="https://twitter.com/..."class="social Twitter"><div class="texto-redes">Twitter</div> </a>
+              <a href="https://www.youtube.com/channel/..." class="social YouTube"><div class="texto-redes">Youtube</div> </a>
+            </div>
+          </footer>
 				</div>
 
 <!--

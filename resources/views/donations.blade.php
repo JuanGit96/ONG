@@ -23,7 +23,9 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
     <meta name="twitter:site" content="@acachawiki" />
     <meta name="twitter:creator" content="@acacha1" />
 
-    <title>{{ trans('adminlte_lang::message.landingdescriptionpratt') }}</title>
+    <title>
+
+    </title>
 
     <!-- Custom styles for this template -->
     <link href="{{ asset('/css/all-landing.css') }}" rel="stylesheet">
@@ -31,6 +33,7 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -59,12 +62,14 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
                     <li><a href="#ps" class="smoothScroll">Productos o servicios</a></li>
                     <li><a href="#contact" class="smoothScroll">{{ trans('adminlte_lang::message.contact') }}</a></li>
                     <li><a href="{{url('transactions')}}" class="smoothScroll">Transacciones</a></li>
-
+                    @if(auth()->user()->rol_id == 1)
+                        <li class="{{isset($integrantesActive) ? $integrantesActiveor : ''}}"><a href="{{url('/integrantes')}}" class="smoothScroll">CRUD Integrantes</a></li>
+                    @endif
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     @if (Auth::guest())
-                        <li><a href="{{ url('/login') }}">{{ trans('adminlte_lang::message.login') }}</a></li>
-                        <li><a href="{{ url('/register') }}">{{ trans('adminlte_lang::message.register') }}</a></li>
+                        <li><a href="{{ url('/login') }}">Inicia Sesion</a></li>
+                        <li><a href="{{ url('/register') }}">Registrate</a></li>
                     @else
                     <li class="nav-item dropdown">
                         <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
@@ -99,18 +104,30 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
                 <br>
                 <br>
                 <div class="col-lg-6 centered size-form">
-                  <form class="form-horizontal">
-                      <div class="form-group">
+                  <form class="form-horizontal"  method="post" action="https://sandbox.checkout.payulatam.com/ppp-web-gateway-payu/">
+                    <input name="merchantId"    type="hidden"  value="508029"   >
+                    <input name="accountId"     type="hidden"  value="512321" >
+                    <input name="description"   type="hidden"  value="Fundacion PAYU"  >
+                    <input name="referenceCode" type="hidden"  value="7678678" >
+                    <input name="tax"   type="hidden"  value="0"  >
+                    <input name="taxReturnBase" type="hidden"  value="0" >
+                    <input name="currency"      type="hidden"  value="COP" >
+                    <input name="signature"   type="hidden"  value="a03d45cc112f199182e8f868d17e64c2"  >
+                    <input name="test"  type="hidden"  value="1" >
+                    <input name="responseUrl"    type="hidden"  value="http://localhost:8000/donations" >
+                    <input name="confirmationUrl"    type="hidden"  value="http://localhost:8000/donations" >
+                    <div class="form-group">
                       <label for="name" class="control-label col-xs-4">Nombre</label>
                       <div class="col-xs-8">
                        <div class="input-group">
                          <div class="input-group-addon">
                            <i class="fa fa-address-book-o"></i>
                          </div>
-                         <input id="name" name="name" type="text" required="required" class="form-control">
+                         <input id="name" name="payerFullName" type="text" required="required" class="form-control">
                        </div>
                       </div>
                       </div>
+
                       <div class="form-group">
                       <label for="usr_apellido" class="control-label col-xs-4">Apellido</label>
                       <div class="col-xs-8">
@@ -149,7 +166,18 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
                          <div class="input-group-addon">
                            <i class="fa fa-address-card-o"></i>
                          </div>
-                         <input id="text" name="text" type="text" required="required" class="form-control">
+                         <input id="text" name="payerDocument" type="text" required="required" class="form-control">
+                       </div>
+                      </div>
+                      </div>
+                      <div class="form-group">
+                      <label for="tpo_id" class="control-label col-xs-4">Valor a donar</label>
+                      <div class="col-xs-8">
+                       <div class="input-group">
+                         <div class="input-group-addon">
+                           <i class="fa fa-address-card-o"></i>
+                         </div>
+                         <input id="text" name="amount" type="text" required="required" class="form-control">
                        </div>
                       </div>
                       </div>
@@ -160,7 +188,7 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
                          <div class="input-group-addon">
                            <i class="fa fa-envelope-open-o"></i>
                          </div>
-                         <input id="email" name="email" type="text" required="required" class="form-control">
+                         <input id="email" name="buyerEmail" type="text" required="required" class="form-control">
                        </div>
                       </div>
                       </div>
@@ -171,7 +199,7 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
                          <div class="input-group-addon">
                            <i class="fa fa-phone"></i>
                          </div>
-                         <input id="usr_telefono" name="usr_telefono" type="text" required="required" class="form-control">
+                         <input id="usr_telefono" name="mobilePhone" type="text" required="required" class="form-control">
                        </div>
                       </div>
                       </div>
@@ -419,56 +447,21 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
             </div>
         </div><!--/ .container -->
     </div><!--/ #features -->
-
-
-    <section id="contact" name="contact"></section>
-    <div id="footerwrap">
-        <div class="container">
-            <div class="col-lg-5">
-                <h3>{{ trans('adminlte_lang::message.address') }}</h3>
-                <p>
-                    Av. Greenville 987,<br/>
-                    New York,<br/>
-                    90873<br/>
-                    United States
-                </p>
-            </div>
-
-            <div class="col-lg-7">
-                <h3>{{ trans('adminlte_lang::message.dropus') }}</h3>
-                <br>
-                <form role="form" action="#" method="post" enctype="plain">
-                    <div class="form-group">
-                        <label for="name1">{{ trans('adminlte_lang::message.yourname') }}</label>
-                        <input type="name" name="Name" class="form-control" id="name1" placeholder="{{ trans('adminlte_lang::message.yourname') }}">
-                    </div>
-                    <div class="form-group">
-                        <label for="email1">{{ trans('adminlte_lang::message.emailaddress') }}</label>
-                        <input type="email" name="Mail" class="form-control" id="email1" placeholder="{{ trans('adminlte_lang::message.enteremail') }}">
-                    </div>
-                    <div class="form-group">
-                        <label>{{ trans('adminlte_lang::message.yourtext') }}</label>
-                        <textarea class="form-control" name="Message" rows="3"></textarea>
-                    </div>
-                    <br>
-                    <button type="submit" class="btn btn-large btn-success">{{ trans('adminlte_lang::message.submit') }}</button>
-                </form>
-            </div>
-        </div>
+    <footer class="footer">
+      <div class="InfoFotter">
+        <p class="contactenos">Contactanos:</p>
+        <p><i class="material-icons">email</i> fundacionfindesin@gmail.com</p>
+        <p><i class="material-icons">location_on</i> Calle 53 No. 74 A 29 Normandia II Sector</p>
+        <p><i class="material-icons">phone</i> 3103498866 - 3046149994</p>
     </div>
-    <div id="c">
-        <div class="container">
-            <p>
-                <a href="https://github.com/acacha/adminlte-laravel"></a><b>admin-lte-laravel</b></a>. {{ trans('adminlte_lang::message.descriptionpackage') }}.<br/>
-                <strong>Copyright &copy; 2015 <a href="http://acacha.org">Acacha.org</a>.</strong> {{ trans('adminlte_lang::message.createdby') }} <a href="http://acacha.org/sergitur">Sergi Tur Badenas</a>. {{ trans('adminlte_lang::message.seecode') }} <a href="https://github.com/acacha/adminlte-laravel">Github</a>
-                <br/>
-                AdminLTE {{ trans('adminlte_lang::message.createdby') }} Abdullah Almsaeed <a href="https://almsaeedstudio.com/">almsaeedstudio.com</a>
-                <br/>
-                 Pratt Landing Page {{ trans('adminlte_lang::message.createdby') }} <a href="http://www.blacktie.co">BLACKTIE.CO</a>
-            </p>
-
-        </div>
+    <div class="RedesSociales">
+      <p class="contactenos">Buscanos en:</p>
+      <a href="https://www.instagram.com/..." class="social Instagram"> <div class="texto-redes">Instagram</div> </a>
+      <a href="https://www.facebook.com/..."class="social Facebook"><div class="texto-redes">Facebook</div> </a>
+      <a href="https://twitter.com/..."class="social Twitter"><div class="texto-redes">Twitter</div> </a>
+      <a href="https://www.youtube.com/channel/..." class="social YouTube"><div class="texto-redes">Youtube</div> </a>
     </div>
+  </footer>
 </div>
 
 <!-- Bootstrap core JavaScript
