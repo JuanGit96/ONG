@@ -34,9 +34,11 @@ Route::get('/transactions', function () {
     }
     else {
 
-        $userLoged = auth()->user()->rol_id;
+        $roleLoged = auth()->user()->rol_id;
 
-        if($userLoged == 2)
+        $userLoged = auth()->user()->usr_id;
+
+        if($roleLoged == 2)
         {
             $transactions = App\Transaction::where('usr_id','=',$userLoged)->paginate(10);
 
