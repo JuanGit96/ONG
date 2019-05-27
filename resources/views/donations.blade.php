@@ -104,18 +104,19 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
                 <br>
                 <br>
                 <div class="col-lg-6 centered size-form">
-                  <form class="form-horizontal"  method="post" action="https://sandbox.checkout.payulatam.com/ppp-web-gateway-payu/">
-                    <input name="merchantId"    type="hidden"  value="508029"   >
-                    <input name="accountId"     type="hidden"  value="512321" >
+                  <form class="form-horizontal" id="formPayU" method="post" action="https://gateway.payulatam.com/ppp-web-gateway">
+                    <input name="merchantId"    type="hidden"  value="807589"   >
+                    <input name="accountId"     type="hidden"  value="814652" >
                     <input name="description"   type="hidden"  value="Fundacion PAYU"  >
-                    <input name="referenceCode" type="hidden"  value="7678678" >
+                    <input name="referenceCode" id="referenceCode" type="hidden"  value="" >
                     <input name="tax"   type="hidden"  value="0"  >
                     <input name="taxReturnBase" type="hidden"  value="0" >
                     <input name="currency"      type="hidden"  value="COP" >
-                    <input name="signature"   type="hidden"  value="a03d45cc112f199182e8f868d17e64c2"  >
-                    <input name="test"  type="hidden"  value="1" >
+                    <input name="signature" id="signature"   type="hidden"  value=""  >
+                    <input name="test"  type="hidden"  value="0" >
                     <input name="responseUrl"    type="hidden"  value="http://localhost:8000/donations" >
                     <input name="confirmationUrl"    type="hidden"  value="http://localhost:8000/donations" >
+                    <input name="lng"    type="hidden"  value="es" >
                     <div class="form-group">
                       <label for="name" class="control-label col-xs-4">Nombre</label>
                       <div class="col-xs-8">
@@ -177,7 +178,7 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
                          <div class="input-group-addon">
                            <i class="fa fa-address-card-o"></i>
                          </div>
-                         <input id="text" name="amount" type="text" required="required" class="form-control">
+                         <input id="valor_donar" name="amount" type="text" required="required" class="form-control">
                        </div>
                       </div>
                       </div>
@@ -199,7 +200,7 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
                          <div class="input-group-addon">
                            <i class="fa fa-phone"></i>
                          </div>
-                         <input id="usr_telefono" name="mobilePhone" type="text" required="required" class="form-control">
+                         <input id="usr_telefono" name="telphone" type="text" required="required" class="form-control">
                        </div>
                       </div>
                       </div>
@@ -469,10 +470,47 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="{{ asset('/js/app.js') }}"></script>
 <script src="{{ asset('/js/smoothscroll.js') }}"></script>
+<script src="{{ asset('/js/md5.js') }}"></script>
 <script>
     $('.carousel').carousel({
         interval: 3500
     })
+</script>
+
+<script>
+
+$("#formPayU").submit(function (event) {
+
+var signature = "5Ho64Lp7FTi4tnikqZHIKKfkQM~807589~%referenceCode%~%amount%~COP"
+
+var amount = $("#valor_donar").val();
+
+var referenceCode = makeid(20);
+
+$("#referenceCode").val(referenceCode);
+
+signature = signature.replace("%referenceCode%",referenceCode);
+signature = signature.replace("%amount%",amount);
+
+signature = md5(signature);
+
+$("#signature").val(signature);
+alert(signature);
+});
+
+/*
+Para palabra aleatoria
+*/
+function makeid(length) {
+   var result           = '';
+   var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+   var charactersLength = characters.length;
+   for ( var i = 0; i < length; i++ ) {
+      result += characters.charAt(Math.floor(Math.random() * charactersLength));
+   }
+   return result;
+}
+
 </script>
 </body>
 </html>

@@ -15,6 +15,13 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/galeria', function () {
+
+    $girls = App\Integrante::all();
+
+    return view('galeria',compact('girls'));
+});
+
 Route::get('/donations', function () {
     if (Auth::guest()) {
       return redirect('login');
