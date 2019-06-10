@@ -104,9 +104,6 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
           <h1>Findesin</h1>
         </div>
         <div class="flecha-down">
-          <i class="material-icons">
-          expand_more
-          </i>
         </div>
     </div>
 
@@ -198,7 +195,7 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
               </div>
 
               <div class="container-circulos">
-                <div class="cuadro-circulo">
+                <div class="cuadro-circulo" data-toggle="modal" data-target="#exampleModalCenter" style="cursor: pointer;">
                   <div class="circulo">
                     <div class="circulo-interno">
                     </div>
@@ -207,7 +204,7 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
                     BREAK DANCE
                   </div>
                 </div>
-                <div class="cuadro-circulo">
+                <div class="cuadro-circulo" data-toggle="modal" data-target="#exampleModalCenterTeatro" style="cursor: pointer;">
                   <div class="circulo">
                     <div class="circulo-interno">
                     </div>
@@ -216,7 +213,7 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
                     TEATRO
                   </div>
                 </div>
-                <div class="cuadro-circulo">
+                <div class="cuadro-circulo" data-toggle="modal" data-target="#exampleModalCenterCirco" style="cursor: pointer;">
                   <div class="circulo">
                     <div class="circulo-interno">
                     </div>
@@ -225,7 +222,7 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
                     CIRCO
                   </div>
                 </div>
-                <div class="cuadro-circulo">
+                <div class="cuadro-circulo" data-toggle="modal" data-target="#exampleModalCenterCoreografias" style="cursor: pointer;">
                   <div class="circulo">
                     <div class="circulo-interno">
                     </div>
@@ -248,21 +245,106 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
               </div>
             </div>
           </div>
-            <footer class="footer">
-              <div class="InfoFotter">
-                <p class="contactenos">Contactanos:</p>
-                <p><i class="material-icons">email</i> fundacionfindesin@gmail.com</p>
-                <p><i class="material-icons">location_on</i> Calle 53 No. 74 A 29 Normandia II Sector</p>
-                <p><i class="material-icons">phone</i> 3103498866 - 3046149994</p>
+          <!-- Footer -->
+          <footer class="page-footer font-small blue-grey lighten-5" style="background-color: #1c2331!important; color: white;">
+
+            <div style="background-color: #f2a8a8;">
+              <div class="container">
+
+                <!-- Grid row-->
+                <div class="row py-4 d-flex align-items-center">
+
+                  <!-- Grid column -->
+                  <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                    <h6 class="mb-0">Redes sociales</h6>
+                  </div>
+                  <!-- Grid column -->
+
+                  <!-- Grid column -->
+                  <div class="col-md-6 col-lg-7 text-center text-md-right">
+
+                    <!-- Facebook -->
+                    <a class="fb-ic">
+                      <i class="fab fa-facebook-f white-text mr-4"> </i>
+                    </a>
+                    <!-- Twitter -->
+                    <a class="tw-ic">
+                      <i class="fab fa-twitter white-text mr-4"> </i>
+                    </a>
+                    <!-- Google +-->
+                    <a class="gplus-ic">
+                      <i class="fab fa-google-plus-g white-text mr-4"> </i>
+                    </a>
+                    <!--Linkedin -->
+                    <a class="li-ic">
+                      <i class="fab fa-linkedin-in white-text mr-4"> </i>
+                    </a>
+                    <!--Instagram-->
+                    <a class="ins-ic">
+                      <i class="fab fa-instagram white-text"> </i>
+                    </a>
+
+                  </div>
+                  <!-- Grid column -->
+
+                </div>
+                <!-- Grid row-->
+
+              </div>
             </div>
-            <div class="RedesSociales">
-              <p class="contactenos">Buscanos en:</p>
-              <a href="https://www.instagram.com/..." class="social Instagram"> <div class="texto-redes">Instagram</div> </a>
-              <a href="https://www.facebook.com/..."class="social Facebook"><div class="texto-redes">Facebook</div> </a>
-              <a href="https://twitter.com/..."class="social Twitter"><div class="texto-redes">Twitter</div> </a>
-              <a href="https://www.youtube.com/channel/..." class="social YouTube"><div class="texto-redes">Youtube</div> </a>
+
+            <!-- Footer Links -->
+            <div class="container text-center text-md-left mt-5">
+
+              <!-- Grid row -->
+              <div class="row mt-3 dark-grey-text">
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+
+                  <!-- Content -->
+                  <h6 class="text-uppercase font-weight-bold" style="color: white;">Findesin</h6>
+                  <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                  <p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
+                    consectetur
+                    adipisicing elit.</p>
+
+                </div>
+
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4"></div>
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4"></div>
+
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+                  <!-- Links -->
+                  <h6 class="text-uppercase font-weight-bold" style="color: white;">Contacto</h6>
+                  <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                  <p>
+                    <i class="fas fa-home mr-3"></i>Calle 53 No. 74 A 29 Normandia II Sector</p>
+                  <p>
+                    <i class="fas fa-envelope mr-3"></i>fundacionfindesin@gmail.com</p>
+                  <p>
+                    <i class="fas fa-phone mr-3"></i>3103498866</p>
+                  <p>
+                    <i class="fas fa-print mr-3"></i>3046149994</p>
+
+                </div>
+                <!-- Grid column -->
+
+              </div>
+              <!-- Grid row -->
+
             </div>
+            <!-- Footer Links -->
+
+            <!-- Copyright -->
+            <div class="footer-copyright text-center text-black-50 py-3">© 2019 Copyright: F</a>
+            </div>
+            <!-- Copyright -->
+
           </footer>
+          <!-- Footer -->
 				</div>
 
 <!--
@@ -486,6 +568,86 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
 
         </div>
     </div>-->
+</div>
+
+<!-- Modal BREAK DANCE-->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle" style="color:black;">BREAK DANCE</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin-top:-21px;">
+          <span aria-hidden="true" style="color:red;">X</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal TEATRO-->
+<div class="modal fade" id="exampleModalCenterTeatro" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle" style="color:black;">TEATRO</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin-top:-21px;">
+          <span aria-hidden="true" style="color:red;">X</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal CIRCO-->
+<div class="modal fade" id="exampleModalCenterCirco" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle" style="color:black;">CIRCO</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin-top:-21px;">
+          <span aria-hidden="true" style="color:red;">X</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal COREOGRAFIAS-->
+<div class="modal fade" id="exampleModalCenterCoreografias" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle" style="color:black;">COREOGRAFIAS</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin-top:-21px;">
+          <span aria-hidden="true" style="color:red;">X</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
 </div>
 
 <!-- Bootstrap core JavaScript

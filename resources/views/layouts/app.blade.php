@@ -92,24 +92,111 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
 
     @yield('content')
 
-    <footer class="footer">
-        <div class="InfoFotter">
-            <p class="contactenos">Contactanos:</p>
-            <p><i class="material-icons">email</i> fundacionfindesin@gmail.com</p>
-            <p><i class="material-icons">location_on</i> Calle 53 No. 74 A 29 Normandia II Sector</p>
-            <p><i class="material-icons">phone</i> 3103498866 - 3046149994</p>
-        </div>
-        <div class="RedesSociales">
-            <p class="contactenos">Buscanos en:</p>
-            <a href="https://www.instagram.com/..." class="social Instagram"> <div class="texto-redes">Instagram</div> </a>
-            <a href="https://www.facebook.com/..."class="social Facebook"><div class="texto-redes">Facebook</div> </a>
-            <a href="https://twitter.com/..."class="social Twitter"><div class="texto-redes">Twitter</div> </a>
-            <a href="https://www.youtube.com/channel/..." class="social YouTube"><div class="texto-redes">Youtube</div> </a>
-        </div>
-    </footer>
 
+  </div>
+  <!-- Footer -->
+  <footer class="page-footer font-small blue-grey lighten-5" style="background-color: #1c2331!important; color: white;">
+
+    <div style="background-color: #f2a8a8;">
+      <div class="container">
+
+        <!-- Grid row-->
+        <div class="row py-4 d-flex align-items-center">
+
+          <!-- Grid column -->
+          <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+            <h6 class="mb-0">Redes sociales</h6>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-6 col-lg-7 text-center text-md-right">
+
+            <!-- Facebook -->
+            <a class="fb-ic">
+              <i class="fab fa-facebook-f white-text mr-4"> </i>
+            </a>
+            <!-- Twitter -->
+            <a class="tw-ic">
+              <i class="fab fa-twitter white-text mr-4"> </i>
+            </a>
+            <!-- Google +-->
+            <a class="gplus-ic">
+              <i class="fab fa-google-plus-g white-text mr-4"> </i>
+            </a>
+            <!--Linkedin -->
+            <a class="li-ic">
+              <i class="fab fa-linkedin-in white-text mr-4"> </i>
+            </a>
+            <!--Instagram-->
+            <a class="ins-ic">
+              <i class="fab fa-instagram white-text"> </i>
+            </a>
+
+          </div>
+          <!-- Grid column -->
+
+        </div>
+        <!-- Grid row-->
+
+      </div>
+    </div>
+
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left mt-5">
+
+      <!-- Grid row -->
+      <div class="row mt-3 dark-grey-text">
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+
+          <!-- Content -->
+          <h6 class="text-uppercase font-weight-bold" style="color: white;">Findesin</h6>
+          <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
+            consectetur
+            adipisicing elit.</p>
+
+        </div>
+
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4"></div>
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4"></div>
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold" style="color: white;">Contacto</h6>
+          <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <i class="fas fa-home mr-3"></i>Calle 53 No. 74 A 29 Normandia II Sector</p>
+          <p>
+            <i class="fas fa-envelope mr-3"></i>fundacionfindesin@gmail.com</p>
+          <p>
+            <i class="fas fa-phone mr-3"></i>3103498866</p>
+          <p>
+            <i class="fas fa-print mr-3"></i>3046149994</p>
+
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row -->
+
+    </div>
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center text-black-50 py-3">© 2019 Copyright: F</a>
+    </div>
+    <!-- Copyright -->
+
+  </footer>
 
 </div>
+
+
 
 <!-- Bootstrap core JavaScript
 ================================================== -->
