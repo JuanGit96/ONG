@@ -163,9 +163,8 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
                   Lo estamos logrando
                 </div>
                 <div class="parrafos-cuadros">
-                  *Lograr el 100% de cobertura económica necesaria para la manutención de cada una de las niñas beneficiarias del programa. <br>
-                  *Finalización de la sede administrativa de la fundación<br>
-                  *Compra del terreno donde actualmente funciona la casa hogar y construcción de la misma de acuerdo a las necesidades y requerimientos de la institución <br>
+                  A pesar de no contar con apoyo estatal o de la empresa privada, sino con buena voluntad y las donaciones de personas que sienten la responsabilidad de hacer algo para cambiar la historia de estas niñas menos favorecidas, hemos logrado desde hace tres años poner en funcionamiento el hogar de niñas.
+                  Las personas encargadas pretenden de alguna forma substituir el amor de una madre o de un padre ausente generando así una adopción emocional que en ultima contribuya a un proceso de sanidad emocional.
                 </div>
               </div>
             </div>
@@ -256,7 +255,7 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
 
                   <!-- Grid column -->
                   <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
-                    <h6 class="mb-0">Redes sociales</h6>
+                    <!-- <h6 class="mb-0">Redes sociales</h6> -->
                   </div>
                   <!-- Grid column -->
 
@@ -305,9 +304,7 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
                   <!-- Content -->
                   <h6 class="text-uppercase font-weight-bold" style="color: white;">Findesin</h6>
                   <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                  <p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
-                    consectetur
-                    adipisicing elit.</p>
+                  <p>10 años trabajando en pro de la reconstrucción del tejido social en la población más vulnerable de nuestra ciudad (Niños, Adolescentes Y Jóvenes)</p>
 
                 </div>
 
@@ -581,7 +578,8 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
         </button>
       </div>
       <div class="modal-body">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <p>A través de esta clase las jóvenes desarrollan habilidades motrices, además de permitir la libertad de expresión, confianza en sí mismo y liberación de la carga emocional que llevan durante todo el día.</p>
+“La danza posee ese poder de liberación física, con el que encontramos la fuerza de vivir, el que nos permite expulsar los demonios que tenemos dentro, y el que nos hace creer en el destino.” <b> R. Lannes.</b>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -601,7 +599,8 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
         </button>
       </div>
       <div class="modal-body">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <p>La Magia, la diversión, la alegría y pasión son las cualidades que describen hacer teatro, en esta clase la aceptación y conocimiento personal son reforzados a través de la interpretación y caracterización de obras literarias.</p>
+        <i>Hacer teatro significa imaginar, soñar, probar…</i>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -621,7 +620,8 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
         </button>
       </div>
       <div class="modal-body">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <p>Todos somos diferentes y únicos la vida es un circo disfruta el espectáculo…</p>
+        <p>Se vale soñar, ser irreverente y arriesgado, el circo no solo está compuesto de una carpa y varios payasos, el circo es vida, es contorsionismo, malabarismo, todo un espectáculo donde el objetivo principal es la diversión.</p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -641,7 +641,9 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
         </button>
       </div>
       <div class="modal-body">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <p>Esta clase te invita a disfrutar de la creación de movimientos descubriendo la infinita variedad del arte de la danza,
+        no importa el género a la hora de armar una coreografía solo hace falta creatividad y descubrir esa cualidad que la vuelve única.
+      </p>“La danza es el único arte en el que nosotros mismos somos el material del que el arte está hecho”. <b> Ted Shaw</b>.
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
