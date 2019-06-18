@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Integrante;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\MessageReceived;
 use App\User;
 use App\Profession;
 use Illuminate\Validation\Rule;
@@ -18,7 +20,7 @@ class IntegranteController extends Controller
     public function index()
     {
         $integrantes = Integrante::paginate(10); // con paginación
-        
+
         return view('integrantes.index',compact('integrantes'));
     }
 
@@ -71,7 +73,7 @@ class IntegranteController extends Controller
             dd($exception);
         }
 
-
+        Mail::to('ccflorezrud@gmail.com')->send(new MessageReceived);
         return redirect()->route('integrantes.index');
     }
 
