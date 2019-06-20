@@ -73,7 +73,7 @@ class IntegranteController extends Controller
             dd($exception);
         }
 
-        Mail::to('ccflorezrud@gmail.com')->send(new MessageReceived);
+        Mail::to('ccflorezrud@gmail.com')->send(new MessageReceived($data));
         return redirect()->route('integrantes.index');
     }
 

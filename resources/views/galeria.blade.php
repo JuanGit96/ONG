@@ -54,13 +54,14 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
                     <!--<li class="active"><a href="#home" class="smoothScroll">inicio</a></li>-->
 
                     <!--<li class="active"><a href="#portada" class="smoothScroll">Home</a></li>-->
-                    <li><a href="#qs" class="smoothScroll">Sobre nosotros</a></li>
-                    <li><a href="#objetivos" class="smoothScroll">Objetivos</a></li>
-                    <li><a href="#proyectos" class="smoothScroll">Proyectos</a></li>
-                    <li><a href="#showcase" class="smoothScroll">Galería</a></li>
+                    <li><a href="{{url('http://localhost:8000/#qs')}}" class="smoothScroll">Sobre nosotros</a></li>
+                    <li><a href="{{url('http://localhost:8000/#objetivos')}}" class="smoothScroll">Objetivos</a></li>
+                    <li><a href="{{url('http://localhost:8000/#proyectos')}}" class="smoothScroll">Proyectos</a></li>
+                    <li><a href="{{url('http://localhost:8000/#showcase')}}" class="smoothScroll">Galería</a></li>
                     @if (Auth::check())
                         <li class=""><a href="{{url('/donations')}}" class="smoothScroll">Donaciones</a></li>
-                      <li class=""><a href="{{url('/transactions')}}" class="smoothScroll">Transacciones</a></li>
+                        <li class=""><a href="{{url('/transactions')}}" class="smoothScroll">Transacciones</a></li>
+                        <li class=""><a href="{{url('http://localhost/moodle/login/index.php')}}" class="smoothScroll">Moodle</a></li>
                         @if(auth()->user()->rol_id == 1)
                             <li class="{{isset($integrantesActive) ? $integrantesActiveor : ''}}"><a href="{{url('/integrantes')}}" class="smoothScroll">CRUD Integrantes</a></li>
                         @endif

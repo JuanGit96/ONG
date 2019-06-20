@@ -60,7 +60,8 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
                     <li><a href="{{url('galeria')}}" class="smoothScroll">Galería</a></li>
                     @if (Auth::check())
                         <li class=""><a href="{{url('/donations')}}" class="smoothScroll">Donaciones</a></li>
-                      <li class=""><a href="{{url('/transactions')}}" class="smoothScroll">Transacciones</a></li>
+                        <li class=""><a href="{{url('/transactions')}}" class="smoothScroll">Transacciones</a></li>
+                        <li class=""><a href="{{url('http://localhost/moodle/login/index.php')}}" class="smoothScroll">Moodle</a></li>
                         @if(auth()->user()->rol_id == 1)
                             <li class="{{isset($integrantesActive) ? $integrantesActiveor : ''}}"><a href="{{url('/integrantes')}}" class="smoothScroll">CRUD Integrantes</a></li>
                         @endif
