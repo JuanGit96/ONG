@@ -60,7 +60,8 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
                     <li><a href="#showcase" class="smoothScroll">Galería</a></li>
                     @if (Auth::check())
                         <li class=""><a href="{{url('/donations')}}" class="smoothScroll">Donaciones</a></li>
-                      <li class=""><a href="{{url('/transactions')}}" class="smoothScroll">Transacciones</a></li>
+                        <li class=""><a href="{{url('/transactions')}}" class="smoothScroll">Transacciones</a></li>
+                        <li class=""><a href="{{url('http://localhost/moodle/login/index.php')}}" class="smoothScroll">Moodle</a></li>
                         @if(auth()->user()->rol_id == 1)
                             <li class="{{isset($integrantesActive) ? $integrantesActiveor : ''}}"><a href="{{url('/integrantes')}}" class="smoothScroll">CRUD Integrantes</a></li>
                         @endif
@@ -97,16 +98,17 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
 <br>
 <br>
 <br>
-    <div class="container">
+
+   <div class="container">
         <div class="col-md-12">
             @foreach($girls as $key => $girl)
                 @if($key == 0 )
                 <div class="row">
                 @endif
-                    <div class="col-md-3">
-                        <img width="200" src="{{Storage::url("$girl->int_foto")}}" alt="">
-                            <h3>Nombre: <span>{{$girl->int_nombre}}</span></h3>
-                            <h3>Edad: <span>{{$girl->int_edad}}</span></h3>
+                    <div class="col-md-4" style="padding:0; height:300px;">
+                        <img width="100%" style="height:70%;" src="{{Storage::url("$girl->int_foto")}}" alt="">
+                            <h3 style="text-align:center;">Nombre: <span>{{$girl->int_nombre}}</span></h3>
+
                     </div>
                 @if((($key+1)%4 == 0 && $key != 0) || $loop->last)
                 </div>
@@ -119,6 +121,7 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
     </div>
 
 </div>
+
 
 <!-- Bootstrap core JavaScript
 ================================================== -->

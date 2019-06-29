@@ -104,18 +104,19 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
                 <br>
                 <br>
                 <div class="col-lg-6 centered size-form">
-                  <form class="form-horizontal" id="formPayU" method="post" action="https://gateway.payulatam.com/ppp-web-gateway" style="color:black;">
-                    <input name="merchantId"    type="hidden"  value="807589"   >
-                    <input name="accountId"     type="hidden"  value="814652" >
+                  <form class="form-horizontal" id="formPayU" method="post" action="https://sandbox.checkout.payulatam.com/ppp-web-gateway-payu/" style="color:black;">
+                    <input name="merchantId"    type="hidden"  value="508029"   >
+                    <input name="ApiKey"    type="hidden"  value="4Vj8eK4rloUd272L48hsrarnUA"   >
+                    <input name="accountId"     type="hidden"  value="512321" >
                     <input name="description"   type="hidden"  value="Fundacion PAYU"  >
-                    <input name="referenceCode" id="referenceCode" type="hidden"  value="" >
+                    <input name="referenceCode" id="referenceCode" type="hidden"  value="12345" >
                     <input name="tax"   type="hidden"  value="0"  >
                     <input name="taxReturnBase" type="hidden"  value="0" >
                     <input name="currency"      type="hidden"  value="COP" >
-                    <input name="signature" id="signature"   type="hidden"  value=""  >
-                    <input name="test"  type="hidden"  value="0" >
-                    <input name="responseUrl"    type="hidden"  value="http://localhost:8000/donations" >
-                    <input name="confirmationUrl"    type="hidden"  value="http://localhost:8000/donations" >
+                    <input name="signature" id="signature"   type="hidden"  value="95a3f7306a6c415aa785fafaf67ad7f7"  >
+                    <input name="test"  type="hidden"  value="1" >
+                    <input name="responseUrl"    type="hidden"  value="" >
+                    <input name="confirmationUrl"    type="hidden"  value="" >
                     <input name="lng"    type="hidden"  value="es" >
                     <div class="form-group">
                       <label for="name" class="control-label col-xs-4">Nombre</label>
@@ -563,7 +564,7 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
 </script>
 
 <script>
-
+/*
 $("#formPayU").submit(function (event) {
 
 var signature = "5Ho64Lp7FTi4tnikqZHIKKfkQM~807589~%referenceCode%~%amount%~COP"
@@ -585,7 +586,7 @@ alert(signature);
 
 /*
 Para palabra aleatoria
-*/
+
 function makeid(length) {
    var result           = '';
    var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
@@ -595,7 +596,7 @@ function makeid(length) {
    }
    return result;
 }
-
+*/
 </script>
 </body>
 </html>
